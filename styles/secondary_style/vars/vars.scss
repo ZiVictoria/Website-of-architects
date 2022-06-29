@@ -33,3 +33,16 @@
 
 $base-color: #E5E5E5;
 $footer-color: #2C2C2C;
+$lg:1440px;
+$sm:768px;
+$xs:360px;
+
+@mixin container {
+    max-width: 1170px;
+    width: 100%;
+}
+
+@mixin ftcontainer {
+    max-width: 1092px;
+    width: 100%;
+}
