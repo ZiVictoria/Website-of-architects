@@ -6,3 +6,50 @@ body{
     width: 100%;
 }
 
+.container{
+    @include container;
+}
+
+.header{
+    display: flex;
+    margin-top: 30px;
+    &__logo{
+        flex-basis: 30%;
+        img{
+            width: 68px;
+            height: 41px;
+        }
+    }
+    &__nav{
+        flex-grow: 1;
+        display: flex;
+        align-items: center;
+        justify-content: start;
+    }
+    &__link{
+        font-family: "Roboto-Regular";
+        text-decoration: none;
+        margin-right: 61px;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 12px;
+        letter-spacing: 0.2em;
+        text-transform: uppercase;
+        color: #333333;
+    }
+
+    &__link:hover{
+        color: #C4C4C4;
+    }
+    
+    &__link.active{
+        display: inline-block;
+        border-bottom: 1px solid #333333;
+        border-top: 1px solid #333333;
+        padding: 4px 12px;
+    }
+
+    &__link.active:hover{
+        font-size: 13px;
+    }
+}
