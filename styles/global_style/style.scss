@@ -1,1 +1,8 @@
 @import '../secondary_style/vars/vars.scss';
+
+body{
+    color: $base-color;
+    max-width: $lg;
+    width: 100%;
+}
+

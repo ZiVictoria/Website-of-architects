@@ -30,4 +30,10 @@
   font-weight: 700;
   font-style: normal;
 }
+
+body {
+  color: #E5E5E5;
+  max-width: 1440px;
+  width: 100%;
+}
 /*# sourceMappingURL=style.css.map */
