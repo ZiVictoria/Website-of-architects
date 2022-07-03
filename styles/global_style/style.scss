@@ -53,3 +53,83 @@ body{
         font-size: 13px;
     }
 }
+
+//gallery
+
+.gallery {
+    padding: 90px 0 120px 0;
+    .gallery__title {
+        font-size: $fztitle;
+        line-height: 50%;
+        font-weight: 300;
+    
+        &-1 {
+            @include titletop;
+        }
+    
+        &-2 {
+            @include titlebt;
+        }
+    }
+
+    &__line {
+        border-bottom: 2px solid #F2F2F2;
+    }
+
+    &__photo {
+        margin: 30px 0 75px 0;
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: 260px 260px;
+        gap: 30px;
+    }
+
+    &__nav {
+        display: flex;
+        width: 30%;
+        height: 53px;
+        font-family: "Roboto-Regular";
+        font-weight: 400;
+        font-size: 24px;
+        justify-content: space-between;
+        align-items: center;
+        &-01 {
+            color: #333333;
+        }
+
+        &-arrow {
+            display: flex;
+            width: 53px;
+            height: 53px;
+            border: 1px solid #F2F2F2;
+            justify-content: center;
+            align-items: center;
+            color: #333333;
+
+            &:hover {
+                cursor: pointer;
+            }
+        }
+    }
+        
+}
+
+//certifications
+
+.certifications {
+    padding: 90px 0 120px 0;
+    .certifications__title {
+        font-size: $fztitle;
+        line-height: 50%;
+        font-weight: 300;
+    
+        &-1 {
+            @include titletop;
+            text-transform: uppercase;
+        }
+    
+        &-2 {
+            @include titlebt;
+        }
+    }
+}
