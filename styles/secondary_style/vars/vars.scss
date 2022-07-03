@@ -37,6 +37,9 @@ $lg:1440px;
 $sm:768px;
 $xs:360px;
 
+//шрифт для заголовков на страницах сделала поменьше, чем в макете. 64-й сильно огромный получается -_- /Lilly
+$fztitle: 44px;
+
 @mixin container {
     max-width: 1170px;
     width: 100%;
@@ -66,18 +69,13 @@ $xs:360px;
     }
 }
 
-@mixin main__up-text {
+@mixin titletop {
 	font-family: 'Roboto-Light';
-	font-style: normal;
-	font-size: 64px;
-	line-height: 64px;
-	color: #BDBDBD;
+	font-weight: 300;
+    color: #BDBDBD;
 }
 
-@mixin main__down-text {
-	font-family: 'Roboto-Bold';
-	font-style: normal;
-	font-size: 64px;
-	line-height: 64px;
-	color: #333333;
+@mixin titlebt {
+	font-family: "Roboto-Bold";
+    color: #333333;
 }
