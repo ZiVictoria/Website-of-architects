@@ -48,3 +48,36 @@ $xs:360px;
     width: 100%;
     margin: 0 auto;
 }
+
+@mixin btn {
+	background-color: #333333;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 222px;
+    height: 71px;
+    span{
+        font-family: 'Roboto-Regular';
+        color: #FFFFFF;
+        font-size: 12px;
+        line-height: 12px; 
+        letter-spacing: 0.2em;
+        text-transform: uppercase;
+    }
+}
+
+@mixin main__up-text {
+	font-family: 'Roboto-Light';
+	font-style: normal;
+	font-size: 64px;
+	line-height: 64px;
+	color: #BDBDBD;
+}
+
+@mixin main__down-text {
+	font-family: 'Roboto-Bold';
+	font-style: normal;
+	font-size: 64px;
+	line-height: 64px;
+	color: #333333;
+}
