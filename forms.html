@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/normalize.css">
+    <link rel="stylesheet" href="./styles/forms_css/forms.css">
+    <title>Form</title>
+</head>
+<body>
+    <div id="wrapper" class="wrapper">
+        <div class="header">
+            <h3>Ask a question</h3>
+            <div class="header__exit">
+                <a href="#"><img src="./assets/forms_img/form_exit.svg" alt="Exit"></a>
+            </div>
+        </div>
+    <div class="forms">
+        <form action="#thanks">
+            <div class="forms__item">
+                <input class="forms__input" type="text" placeholder="Name">
+            </div>
+            <div class="forms__item">
+                <input  class="forms__input" type="tel" name="tel" placeholder="Phone Number*" required="required">
+            </div>
+            <div class="forms__item">
+                <input  class="forms__input" type="email" name="email" placeholder="Email*" required="required">
+            </div>
+            <div class="forms__item">
+                <input  class="forms__input" type="text" placeholder="Interested Product/Service">
+            </div>
+            <div class="forms__item">
+                <textarea  class="forms__input forms__textarea" name="textarea" cols="30" rows="20" placeholder="Message*" required="required"></textarea>
+            </div>
+            <div class="forms__item">
+                <input class="forms__checkbox" type="checkbox" id="agree" name="checkbox" checked="checked">
+                <label class="forms__label" for="agree"><p>By submitting an application you agree to the privacy policy</p></label>
+            </div>
+            <div>
+                <input class="forms__button" type="submit" value="Submit">
+            </div>
+        </form>
+    </div>
+    </div>
+        <div id="thanks" class="thanks">
+            <div class="thanks__box">
+                <div class="thanks__exit">
+                    <a href="#wrapper"><img src="./assets/forms_img/thank_exit.svg" alt="Exit"></a>
+                </div>
+                <div class="thanks_img">
+                    <img src="./assets/forms_img/success.png" alt="Thanks">
+                </div>
+                <h3>Thank you!</h3>
+                <span class="thanks__text">Your message has been sent, we will contact you shortly</span>
+                <div class="forms__button thanks__button">
+                    <a href="#wrapper">return back</a>
+                </div>
+            </div>
+        </div>
+    
+</body>
+</html>
