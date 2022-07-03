@@ -1,36 +1,32 @@
 @charset "UTF-8";
 @font-face {
-  font-family: 'Roboto-Light';
+  font-family: "Roboto-Light";
   src: url("../../fonts/Roboto-Light.eot");
   src: local("☺"), url("../../fonts/Roboto-Light.woff") format("woff"), url("../../fonts/Roboto-Light.ttf") format("truetype"), url("../../fonts/Roboto-Light.svg") format("svg");
   font-weight: 300;
   font-style: normal;
 }
-
 @font-face {
-  font-family: 'Roboto-Regular';
+  font-family: "Roboto-Regular";
   src: url("../../fonts/Roboto-Regular.eot");
   src: local("☺"), url("../../fonts/Roboto-Regular.woff") format("woff"), url("../../fonts/Roboto-Regular.ttf") format("truetype"), url("../../fonts/Roboto-Regular.svg") format("svg");
   font-weight: normal;
   font-style: normal;
 }
-
 @font-face {
-  font-family: 'Roboto-Medium';
+  font-family: "Roboto-Medium";
   src: url("../../fonts/Roboto-Medium.eot");
   src: local("☺"), url("../../fonts/Roboto-Medium.woff") format("woff"), url("../../fonts/Roboto-Medium.ttf") format("truetype"), url("../../fonts/Roboto-Medium.svg") format("svg");
   font-weight: 500;
   font-style: normal;
 }
-
 @font-face {
-  font-family: 'Roboto-Bold';
+  font-family: "Roboto-Bold";
   src: url("../../fonts/Roboto-Bold.eot");
   src: local("☺"), url("../../fonts/Roboto-Bold.woff") format("woff"), url("../../fonts/Roboto-Bold.ttf") format("truetype"), url("../../fonts/Roboto-Bold.svg") format("svg");
   font-weight: 700;
   font-style: normal;
 }
-
 body {
   color: #E5E5E5;
   max-width: 1440px;
@@ -44,37 +40,22 @@ body {
 }
 
 .header {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   margin-top: 30px;
 }
-
 .header__logo {
-  -ms-flex-preferred-size: 30%;
-      flex-basis: 30%;
+  flex-basis: 30%;
 }
-
 .header__logo img {
   width: 68px;
   height: 41px;
 }
-
 .header__nav {
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
-  display: -webkit-box;
-  display: -ms-flexbox;
+  flex-grow: 1;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: start;
+  align-items: center;
+  justify-content: start;
 }
-
 .header__link {
   font-family: "Roboto-Regular";
   text-decoration: none;
@@ -86,19 +67,89 @@ body {
   text-transform: uppercase;
   color: #333333;
 }
-
 .header__link:hover {
   color: #C4C4C4;
 }
-
 .header__link.active {
   display: inline-block;
   border-bottom: 1px solid #333333;
   border-top: 1px solid #333333;
   padding: 4px 12px;
 }
-
 .header__link.active:hover {
   font-size: 13px;
 }
-/*# sourceMappingURL=style.css.map */
+
+.gallery {
+  padding: 90px 0 120px 0;
+}
+.gallery .gallery__title {
+  font-size: 44px;
+  line-height: 50%;
+  font-weight: 300;
+}
+.gallery .gallery__title-1 {
+  font-family: "Roboto-light";
+  font-weight: 200;
+  color: #BDBDBD;
+}
+.gallery .gallery__title-2 {
+  font-family: "Roboto-bold";
+  font-weight: 700;
+  color: #333333;
+}
+.gallery__line {
+  border-bottom: 2px solid #F2F2F2;
+}
+.gallery__photo {
+  margin: 30px 0 75px 0;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: 260px 260px;
+  gap: 30px;
+}
+.gallery__nav {
+  display: flex;
+  width: 30%;
+  height: 53px;
+  font-family: "Roboto-Regular";
+  font-weight: 400;
+  font-size: 24px;
+  justify-content: space-between;
+  align-items: center;
+}
+.gallery__nav-01 {
+  color: #333333;
+}
+.gallery__nav-arrow {
+  display: flex;
+  width: 53px;
+  height: 53px;
+  border: 1px solid #F2F2F2;
+  justify-content: center;
+  align-items: center;
+  color: #333333;
+}
+.gallery__nav-arrow:hover {
+  cursor: pointer;
+}
+
+.certifications {
+  padding: 90px 0 120px 0;
+}
+.certifications .certifications__title {
+  font-size: 44px;
+  line-height: 50%;
+  font-weight: 300;
+}
+.certifications .certifications__title-1 {
+  font-family: "Roboto-light";
+  font-weight: 200;
+  color: #BDBDBD;
+  text-transform: uppercase;
+}
+.certifications .certifications__title-2 {
+  font-family: "Roboto-bold";
+  font-weight: 700;
+  color: #333333;
+}/*# sourceMappingURL=style.css.map */
