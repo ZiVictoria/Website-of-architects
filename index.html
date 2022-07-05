@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/normalize.css">
     <link rel="stylesheet" href="./styles/global_style/style.css">
+    <link rel="stylesheet" href="./styles/forms_css/forms.css">
     <title>Architects</title>
 </head>
 
@@ -21,6 +22,106 @@
             <a class="header__link" href="./contacts.html">Contacts</a>
         </nav>
     </header>
+    <main class="main container">
+        <div class="project">
+            <div class="project__info">
+                <div class="project__title">
+                    <h2 class="project__title-1">PROJECT</h2>
+                    <h2 class="project__title-2">Lorum</h2>
+                </div>
+                <div class="project__nav">
+                    <div class="project__nav__button">
+                        <div class="project__nav__button-arrow">&larr;</div>
+                        <div class="project__nav__button-arrow">&rarr;</div>
+                    </div>
+                    <div class="project__nav__count">
+                        <div class="project__nav__count-01">01</div>
+                        <div class="project__nav__count-slash">&frasl;</div>
+                        <div class="project__nav__count-02">02</div>
+                    </div> 
+                </div>  
+            </div>
+            <div class="project__gallery">
+                <img src="./assets/global_img/main_img.png" alt="project_photo">
+                <button class="project__gallery-button"><span>View project &rarr;</span></button>  
+            </div>  
+        </div>
+        <div class="about">
+            <div class="about__img">
+                <img class="grid_img_1" src="./assets/global_img/about_img_1.png" alt="about_img_1">
+                <img class="grid_img_3" src="./assets/global_img/about_img_3.png" alt="about_img_3">
+                <img class="grid_img_2" src="./assets/global_img/about_img_2.png" alt="about_img_2">
+            </div>
+            <div class="about__body">
+                <div>
+                    <h2 class="about__title">About</h2>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+                </div>
+                <button class="about-button"><span>Read More &rarr;</span></button>
+            </div>
+        </div>
+        <div class="main_focus">
+            <h2 class="main_focus__title">Main Focus/Mission Statement</h2>
+            <div class="main_focus__info">
+                <div class="main_focus__info-1">
+                    <p class="big_number">1</p>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique beatae ipsam mollitia.</p>
+                </div>
+                <div class="main_focus__info-2">
+                    <p class="big_number">2</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus vitae est, expedita eaque aspernatur accusantium porro ducimus repellat illum.</p>
+                </div>
+            </div>
+        </div>
+        <div class="projects">
+            <h2 class="projects__title">Our Projects</h2>
+            <div class="projects__gallery">
+                <div class="projects__gallery-up">
+                    <div class="projects__gallery-background">
+                        <h2 class="projects__gallery-title">Sample<br>Project</h2>
+                        <a class="a_btn" href="#">View more &rarr;</a>
+                    </div>
+                    <img class="projects__gallery-img2" src="./assets/global_img/sample_img_1.png" alt="sample_img_1">
+                </div>
+                <div class="projects__gallery-low">
+                    <img class="projects__gallery-img3" src="./assets/global_img/sample_img_2.png" alt="sample_img_2">
+                    <img class="projects__gallery-img4" src="./assets/global_img/sample_img_3.png" alt="sample_img_3">
+                    <img class="projects__gallery-img5" src="./assets/global_img/sample_img_4.png" alt="sample_img_4">
+                </div>
+            </div>
+            <div class="projects-btn_position">
+                <button class="button">
+                    <span>all projects &rarr;</span>
+                </button>
+            </div>
+        </div>
+        <div class="contact_info">
+            <h2 class="contact_info__title">Contact Us</h2>
+            <div class="contact_info__body">
+                <div class="forms">
+                    <form action="#thanks">
+                        <div class="forms__item">
+                            <input class="forms__input" type="text" placeholder="Name">
+                        </div>
+                        <div class="forms__item">
+                            <input  class="forms__input" type="tel" name="tel" placeholder="Phone Number*" required="required">
+                        </div>
+                        <div class="forms__item">
+                            <input  class="forms__input" type="email" name="email" placeholder="Email*" required="required">
+                        </div>
+                        <div class="forms__item">
+                            <input  class="forms__input" type="text" placeholder="Interested In">
+                        </div>
+                        <div class="forms__item">
+                            <textarea  class="forms__input forms__textarea" name="textarea" cols="30" rows="15" placeholder="Message*" required="required"></textarea>
+                        </div>
+                    </form>
+                </div>
+                <img src="./assets/global_img/contact_us.png" alt="contact_us_img">
+            </div>
+            <button class="contact_info-button"><span>Send Email &rarr;</span></button>
+        </div>
+    </main>
 
     <!--footer start-->
     <footer class="footer">
