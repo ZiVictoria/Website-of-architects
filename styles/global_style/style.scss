@@ -67,10 +67,20 @@ body {
 //navigation-end
 
 .main{
-    display: flex;
-    gap: 177px;
+    width: $lg;
 }
 
+.contacts_container{
+    max-width: $lg;
+	width: 100%;
+	margin: 0 auto;
+}
+
+.wrapper{
+    display: flex;
+    gap: 80px;
+    margin-left: 49px;
+}
 .contacts {
     padding: 90px 0 120px 0;
     &__title {
@@ -115,12 +125,11 @@ body {
         }
     }
 }
-.full-width {
+.contacts-image{
     padding: 90px 0 120px 0;
-	left: 12.5%;
-	margin-left: -10vw;
-	max-width: 50vw;
-	position: relative;
+    img{
+        max-width: 100%;
+    }
 }
 
 

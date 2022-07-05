@@ -148,10 +148,21 @@ body {
 }
 
 .main {
+  width: 1440px;
+}
+
+.contacts_container {
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 177px;
+  gap: 80px;
+  margin-left: 49px;
 }
 
 .contacts {
@@ -232,12 +243,12 @@ body {
   cursor: pointer;
 }
 
-.full-width {
+.contacts-image {
   padding: 90px 0 120px 0;
-  left: 12.5%;
-  margin-left: -10vw;
-  max-width: 50vw;
-  position: relative;
+}
+
+.contacts-image img {
+  max-width: 100%;
 }
 
 .project {
