@@ -40,8 +40,7 @@ body {
         font-family: "Roboto-Regular";
         text-decoration: none;
         margin-right: 61px;
-        font-weight: 400;
-        font-size: 12px;
+        font-size: 1vw;
         line-height: 12px;
         letter-spacing: 0.2em;
         text-transform: uppercase;
@@ -60,12 +59,13 @@ body {
     }
 
     &__link.active:hover {
-        font-size: 13px;
+        font-size: 1.1vw;
     }
 }
 
 //navigation-end
 
+//contacts page start
 .main{
     width: $lg;
 }
@@ -77,12 +77,12 @@ body {
 }
 
 .wrapper{
+    padding: 90px 0 120px 0;
     display: flex;
     gap: 80px;
     margin-left: 49px;
 }
 .contacts {
-    padding: 90px 0 120px 0;
     &__title {
         line-height: 50%;
         font-size: $fztitle;
@@ -100,8 +100,7 @@ body {
         height: 262px;
         flex-direction: column;
         justify-content: space-between;
-        font-size: 16px;
-        line-height: 21px;
+        font-size: $fzp;
         color: #333333;
         line-height: 50%;
 
@@ -126,12 +125,12 @@ body {
     }
 }
 .contacts-image{
-    padding: 90px 0 120px 0;
+    width: 100vw;
     img{
         max-width: 100%;
     }
 }
-
+//contacts page end
 
 //START main_page
 
