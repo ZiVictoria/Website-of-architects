@@ -494,6 +494,190 @@ body {
 
 }
 
+
+//projects starts
+
+.projects{
+    margin: 4em 0 6em;
+
+    &__title{
+        font-size: $fztitle;
+        line-height: 50%;
+
+        &-1{
+            @include titletop;
+        }
+        
+        &-2{
+            @include titlebt;
+        }
+    }
+
+    &__line{
+        border-bottom: 2px solid #F2F2F2;
+        margin-bottom: 1.5em;
+    }
+
+    &__section-1,
+    &__section-2,
+    &__section-3 {
+        display: grid;
+        grid-template-columns: 55% 45%;
+        margin-bottom: 3em;
+
+        &_left{
+            grid-column: 1/2;
+        }
+
+        &_right{
+            grid-column: 2/3;
+            background-color: #FBFBFB;
+
+            &-title{
+                margin: 30px 0 73px 1em;
+                font-family: 'Roboto-Light';
+                font-style: normal;
+                font-weight: 300;
+                font-size: 2.5em;
+                line-height: 47px;
+                color: #BDBDBD;
+            }
+            &-text{
+                margin: 0 0 50px 2.5em;
+                width: 400px;
+                font-family: 'Roboto-Light';
+                font-style: normal;
+                font-weight: 300;
+                font-size: 1em;
+                line-height: 25px;
+                color: #000000;
+            }
+            &-link{
+                display: flex;
+                width: 20%;
+                justify-content: center;
+                align-items: center;
+                margin-left: 2.5em;
+                width: 222px;
+                height: 71px;
+                background-color: #FFFFFF;
+                text-decoration: none;
+                font-family: 'Roboto-regular';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 0.75em;
+                line-height: 12px;
+                letter-spacing: 0.2em;
+                text-transform: uppercase;
+                color: #333333;
+            }
+            &-btn{
+                @include btn__projects;
+                text-decoration: none;
+                font-family: 'Roboto-regular';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 0.75em;
+                line-height: 12px;
+                letter-spacing: 0.2em;
+                text-transform: uppercase;
+                color: #333333;
+                
+                &:hover{
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+    &__nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 30%;
+
+        &-01{
+            font-family: 'Roboto-regular';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 1.5em;
+            line-height: 1.5em;
+            color: #333333;
+        }
+        &-05,
+        &-slash {
+            font-family: 'Roboto-regular';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 1.5em;
+            line-height: 1.5em;
+            color: #BDBDBD;
+        }
+        &-arrow{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 53px;
+            height: 53px;
+            background-color: #FFFFFF;
+            border: 1px solid #F2F2F2;
+            color: #000000;
+
+            &:hover{
+                cursor: pointer;
+                background-color: #F9F9F9;
+            }
+        }
+    }
+}
+
+// projects ends
+
+// sample project 1 starts
+
+.project-1{
+    margin: 4em 0 6em;
+    
+    &__title{
+        font-size: $fztitle;
+        line-height: 50%;
+
+        &-1{
+            @include titletop;
+        }
+
+        &-2{
+            @include titlebt;
+        }
+    }
+
+    &__line{
+        border-bottom: 2px solid #F2F2F2;
+        margin-bottom: 1.5em;
+    }
+
+    &__section-1{
+        margin-bottom: 1.5em;
+    }
+    &__section-2{
+        display: grid;
+        grid-template-columns: 37% 60%;
+        gap: 1em;
+        margin-bottom: 1.5em;
+
+        &_text{
+            margin: 0;
+            font-family: 'Roboto-light';
+            font-style: normal;
+            font-weight: 300;
+            font-size: 1em;
+            line-height: 25px;
+            color: #000000;
+        }
+    }
+}
+// end sample project 1
+
+
 //certifications
 
 .certifications {

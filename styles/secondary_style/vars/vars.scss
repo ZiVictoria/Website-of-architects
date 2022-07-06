@@ -131,3 +131,13 @@ $lhp: 25px; //line-height p
 	margin: 0;
 	padding-right: 3%;
 }
+
+@mixin btn__projects{
+	margin-left: 2.5em;
+	padding: 0;
+	width: 222px;
+	height: 71px;
+	background-color: #FFFFFF;
+	border: none;
+	
+}
