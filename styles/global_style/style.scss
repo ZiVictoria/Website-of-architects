@@ -21,7 +21,7 @@ body {
     margin: 30px 49px;
 
     &__logo {
-        flex-basis: 30%;
+        flex-basis: 34%;
 
         img {
             width: 68px;
@@ -62,6 +62,7 @@ body {
         font-size: 1.1vw;
     }
 }
+
 
 //navigation-end
 
@@ -476,6 +477,24 @@ body {
         gap: 30px;
     }
 
+    @media (max-width:$sm) {
+        .gallery__photo {
+            display: grid;
+            grid-template-columns: repeat(3, 210px);
+            grid-template-rows: 260px 260px 260px;
+            gap: 30px;
+        }
+    }
+
+    @media (max-width:$xs) {
+        .gallery__photo {
+            display: grid;
+            grid-template-columns: repeat(2, 210px);
+            grid-template-rows: 260px 260px 260px 260px;
+            gap: 30px;
+        }
+    }
+
     &__nav {
         display: flex;
         width: 30%;
@@ -508,10 +527,11 @@ body {
 }
 
 
+
 //projects starts
 
-.projects {
-    margin: 4em 0 6em;
+.projects{
+    padding-top: 90px;
 
     &__title {
         font-size: $fztitle;
@@ -528,7 +548,7 @@ body {
 
     &__line {
         border-bottom: 2px solid #F2F2F2;
-        margin-bottom: 1.5em;
+        margin-bottom: 2em;
     }
 
     &__section-1,
@@ -611,6 +631,11 @@ body {
         justify-content: space-between;
         align-items: center;
         width: 30%;
+        font-family: 'Roboto-regular';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1.5em;
+        line-height: 1.5em;
 
         &-01 {
             font-family: 'Roboto-regular';
@@ -623,11 +648,6 @@ body {
 
         &-05,
         &-slash {
-            font-family: 'Roboto-regular';
-            font-style: normal;
-            font-weight: 400;
-            font-size: 1.5em;
-            line-height: 1.5em;
             color: #BDBDBD;
         }
 
@@ -653,9 +673,10 @@ body {
 
 // sample project 1 starts
 
-.project-1 {
-    margin: 4em 0 6em;
 
+.project-1{
+    padding: 90px 0 6em;
+  
     &__title {
         font-size: $fztitle;
         line-height: 50%;
@@ -671,7 +692,7 @@ body {
 
     &__line {
         border-bottom: 2px solid #F2F2F2;
-        margin-bottom: 1.5em;
+        margin-bottom: 2em;
     }
 
     &__section-1 {
@@ -696,7 +717,8 @@ body {
     }
 }
 
-// end sample project 1
+// sample project 1 ends
+
 
 
 //certifications
@@ -718,6 +740,7 @@ body {
         }
     }
 }
+
 
 //footer start
 
