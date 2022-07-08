@@ -21,7 +21,7 @@ body {
     margin: 30px 49px;
 
     &__logo {
-        flex-basis: 30%;
+        flex-basis: 34%;
 
         img {
             width: 68px;
@@ -63,25 +63,27 @@ body {
     }
 }
 
+
 //navigation-end
 
 //contacts page start
-.main{
+.main {
     width: $lg;
 }
 
-.contacts_container{
+.contacts_container {
     max-width: $lg;
-	width: 100%;
-	margin: 0 auto;
+    width: 100%;
+    margin: 0 auto;
 }
 
-.wrapper{
+.wrapper {
     padding: 90px 0 120px 0;
     display: flex;
     gap: 80px;
     margin-left: 49px;
 }
+
 .contacts {
     &__title {
         line-height: 50%;
@@ -95,7 +97,8 @@ body {
     &__down-text {
         @include titlebt;
     }
-    &__text{
+
+    &__text {
         display: flex;
         height: 262px;
         flex-direction: column;
@@ -106,30 +109,35 @@ body {
 
     }
 
-    &__address{
-    font-family: 'Roboto-Regular';
-    margin-bottom: 33px;
+    &__address {
+        font-family: 'Roboto-Regular';
+        margin-bottom: 33px;
     }
 
-    &__text-bold{
-            font-family: 'Roboto-Bold';
-            color: #333333;
-            margin-bottom: 13px;
-            display: block;
-        }
-    &-btn{
+    &__text-bold {
+        font-family: 'Roboto-Bold';
+        color: #333333;
+        margin-bottom: 13px;
+        display: block;
+    }
+
+    &-btn {
         @include btn;
-        &:hover{
+
+        &:hover {
             cursor: pointer;
         }
     }
 }
-.contacts-image{
+
+.contacts-image {
     width: 100vw;
-    img{
+
+    img {
         max-width: 100%;
     }
 }
+
 //contacts page end
 
 //START main_page
@@ -199,12 +207,17 @@ body {
     }
 
     .project__gallery {
+        position: relative;
+        height: 829px;
+        width: 770px;
+        background-image: url('./../../assets/global_img/main_img.png');
+
         &-button {
             @include btn;
             @include btn_white;
-            position: relative;
-            bottom: 8.3%;
-            right: 1%;
+            position: absolute;
+            bottom: 0%;
+            left: 0%;
 
             &:hover {
                 cursor: pointer;
@@ -463,6 +476,24 @@ body {
         gap: 30px;
     }
 
+    @media (max-width:$sm) {
+        .gallery__photo {
+            display: grid;
+            grid-template-columns: repeat(3, 210px);
+            grid-template-rows: 260px 260px 260px;
+            gap: 30px;
+        }
+    }
+
+    @media (max-width:$xs) {
+        .gallery__photo {
+            display: grid;
+            grid-template-columns: repeat(2, 210px);
+            grid-template-rows: 260px 260px 260px 260px;
+            gap: 30px;
+        }
+    }
+
     &__nav {
         display: flex;
         width: 30%;
@@ -495,25 +526,26 @@ body {
 }
 
 
+
 //projects starts
 
 .projects{
     padding-top: 90px;
 
-    &__title{
+    &__title {
         font-size: $fztitle;
         line-height: 50%;
 
-        &-1{
+        &-1 {
             @include titletop;
         }
-        
-        &-2{
+
+        &-2 {
             @include titlebt;
         }
     }
 
-    &__line{
+    &__line {
         border-bottom: 2px solid #F2F2F2;
         margin-bottom: 2em;
     }
@@ -525,15 +557,15 @@ body {
         grid-template-columns: 55% 45%;
         margin-bottom: 3em;
 
-        &_left{
+        &_left {
             grid-column: 1/2;
         }
 
-        &_right{
+        &_right {
             grid-column: 2/3;
             background-color: #FBFBFB;
 
-            &-title{
+            &-title {
                 margin: 30px 0 73px 1em;
                 font-family: 'Roboto-Light';
                 font-style: normal;
@@ -542,7 +574,8 @@ body {
                 line-height: 47px;
                 color: #BDBDBD;
             }
-            &-text{
+
+            &-text {
                 margin: 0 0 50px 2.5em;
                 width: 400px;
                 font-family: 'Roboto-Light';
@@ -552,7 +585,8 @@ body {
                 line-height: 25px;
                 color: #000000;
             }
-            &-link{
+
+            &-link {
                 display: flex;
                 width: 20%;
                 justify-content: center;
@@ -571,7 +605,8 @@ body {
                 text-transform: uppercase;
                 color: #333333;
             }
-            &-btn{
+
+            &-btn {
                 @include btn__projects;
                 text-decoration: none;
                 font-family: 'Roboto-regular';
@@ -582,14 +617,15 @@ body {
                 letter-spacing: 0.2em;
                 text-transform: uppercase;
                 color: #333333;
-                
-                &:hover{
+
+                &:hover {
                     cursor: pointer;
                 }
             }
         }
     }
-    &__nav{
+
+    &__nav {
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -600,14 +636,21 @@ body {
         font-size: 1.5em;
         line-height: 1.5em;
 
-        &-01{
+        &-01 {
+            font-family: 'Roboto-regular';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 1.5em;
+            line-height: 1.5em;
             color: #333333;
         }
+
         &-05,
         &-slash {
             color: #BDBDBD;
         }
-        &-arrow{
+
+        &-arrow {
             display: flex;
             justify-content: center;
             align-items: center;
@@ -617,7 +660,7 @@ body {
             border: 1px solid #F2F2F2;
             color: #000000;
 
-            &:hover{
+            &:hover {
                 cursor: pointer;
                 background-color: #F9F9F9;
             }
@@ -629,37 +672,39 @@ body {
 
 // sample project 1 starts
 
+
 .project-1{
     padding: 90px 0 6em;
-    
-    &__title{
+  
+    &__title {
         font-size: $fztitle;
         line-height: 50%;
 
-        &-1{
+        &-1 {
             @include titletop;
         }
 
-        &-2{
+        &-2 {
             @include titlebt;
         }
     }
 
-    &__line{
+    &__line {
         border-bottom: 2px solid #F2F2F2;
         margin-bottom: 2em;
     }
 
-    &__section-1{
+    &__section-1 {
         margin-bottom: 1.5em;
     }
-    &__section-2{
+
+    &__section-2 {
         display: grid;
         grid-template-columns: 37% 60%;
         gap: 1em;
         margin-bottom: 1.5em;
 
-        &_text{
+        &_text {
             margin: 0;
             font-family: 'Roboto-light';
             font-style: normal;
@@ -670,7 +715,9 @@ body {
         }
     }
 }
+
 // sample project 1 ends
+
 
 
 //certifications
@@ -692,6 +739,7 @@ body {
         }
     }
 }
+
 
 //footer start
 
