@@ -96,8 +96,7 @@ body {
 }
 
 .header__logo {
-  -ms-flex-preferred-size: 34%;
-      flex-basis: 34%;
+  flex-basis: 34%;
 }
 
 .header__logo img {
