@@ -463,6 +463,24 @@ body {
         gap: 30px;
     }
 
+    @media (max-width:$sm) {
+        .gallery__photo {
+            display: grid;
+            grid-template-columns: repeat(3, 210px);
+            grid-template-rows: 260px 260px 260px;
+            gap: 30px;
+        }
+    }
+
+    @media (max-width:$xs) {
+        .gallery__photo {
+            display: grid;
+            grid-template-columns: repeat(2, 210px);
+            grid-template-rows: 260px 260px 260px 260px;
+            gap: 30px;
+        }
+    }
+
     &__nav {
         display: flex;
         width: 30%;
@@ -493,6 +511,7 @@ body {
     }
 
 }
+
 
 
 //projects starts
@@ -697,6 +716,7 @@ body {
         }
     }
 }
+
 
 //footer start
 
