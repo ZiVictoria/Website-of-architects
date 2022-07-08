@@ -153,7 +153,7 @@ body {
         grid-template-columns: 100%;
         grid-template-rows: 57% 35%;
         align-items: center;
-        row-gap: 5%;
+        row-gap: 10%;
 
         .project__title {
             align-self: end;
@@ -175,7 +175,7 @@ body {
             display: grid;
             align-self: stretch;
             grid-template-rows: repeat(2, 35%);
-            row-gap: 5%;
+            row-gap: 15%;
 
             &__button,
             &__count {
@@ -210,6 +210,7 @@ body {
         position: relative;
         height: 829px;
         width: 770px;
+
         background-image: url('./../../assets/global_img/main_img.png');
 
         &-button {

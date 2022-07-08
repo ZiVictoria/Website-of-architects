@@ -258,14 +258,10 @@ body {
 .project .project__info {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 100%;
-      grid-template-columns: 100%;
-  -ms-grid-rows: 57% 35%;
-      grid-template-rows: 57% 35%;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  row-gap: 5%;
+  grid-template-columns: 100%;
+  grid-template-rows: 57% 35%;
+  align-items: center;
+  row-gap: 10%;
 }
 
 .project .project__info .project__title {
@@ -291,11 +287,9 @@ body {
 .project .project__info .project__nav {
   display: -ms-grid;
   display: grid;
-  -ms-grid-row-align: stretch;
-      align-self: stretch;
-  -ms-grid-rows: (35%)[2];
-      grid-template-rows: repeat(2, 35%);
-  row-gap: 5%;
+  align-self: stretch;
+  grid-template-rows: repeat(2, 35%);
+  row-gap: 15%;
 }
 
 .project .project__info .project__nav__button, .project .project__info .project__nav__count {
