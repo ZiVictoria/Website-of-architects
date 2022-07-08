@@ -79,7 +79,7 @@ body {
   margin: 30px 49px;
 }
 .header__logo {
-  flex-basis: 30%;
+  flex-basis: 34%;
 }
 .header__logo img {
   width: 68px;
@@ -112,6 +112,10 @@ body {
 }
 .header__link.active:hover {
   font-size: 1.1vw;
+}
+
+a:focus {
+  color: red;
 }
 
 .main {
@@ -244,6 +248,14 @@ body {
 .project .project__info .project__nav__button-arrow:hover, .project .project__info .project__nav__count-arrow:hover {
   cursor: pointer;
 }
+
+.project .project__gallery {
+  position: relative;
+  height: 829px;
+  width: 770px;
+  background-image: url("./../../assets/global_img/main_img.png");
+}
+
 .project .project__gallery-button {
   background-color: #333333;
   display: flex;
@@ -253,9 +265,9 @@ body {
   height: 71px;
   background-color: #FFFFFF;
   border: none;
-  position: relative;
-  bottom: 8.3%;
-  right: 1%;
+  position: absolute;
+  bottom: 0%;
+  left: 0%;
 }
 .project .project__gallery-button span {
   font-family: "Roboto-Regular";
@@ -531,22 +543,6 @@ body {
   grid-template-columns: repeat(5, 1fr);
   grid-template-rows: 260px 260px;
   gap: 30px;
-}
-@media (max-width: 768px) {
-  .gallery .gallery__photo {
-    display: grid;
-    grid-template-columns: repeat(3, 210px);
-    grid-template-rows: 260px 260px 260px;
-    gap: 30px;
-  }
-}
-@media (max-width: 360px) {
-  .gallery .gallery__photo {
-    display: grid;
-    grid-template-columns: repeat(2, 210px);
-    grid-template-rows: 260px 260px 260px 260px;
-    gap: 30px;
-  }
 }
 .gallery__nav {
   display: flex;
