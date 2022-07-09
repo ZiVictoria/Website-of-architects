@@ -949,7 +949,7 @@ body {
 }
 @media screen and (max-width: 360px) {
   .main {
-    width: 360px;
+    max-width: 360px;
   }
   .main h2 {
     font-size: 1.5em;
@@ -1031,7 +1031,7 @@ body {
     display: none;
   }
   .contact_info__body .forms__item {
-    width: 300px;
+    max-width: 300px;
   }
 
   .main_focus__info {

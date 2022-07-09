@@ -967,7 +967,7 @@ body {
 
     // ширина до 360px
     .main {
-        width: 360px;
+        max-width: 360px;
 
         h2 {
             font-size: 1.5em;
@@ -1073,7 +1073,7 @@ body {
             }
 
             .forms__item {
-                width: 300px;
+                max-width: 300px;
             }
         }
     }
