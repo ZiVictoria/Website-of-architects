@@ -946,4 +946,101 @@ body {
     justify-self: center;
     grid-column: 1/3;
   }
+}
+@media screen and (max-width: 360px) {
+  .main {
+    width: 360px;
+  }
+  .main h2 {
+    font-size: 1.5em;
+  }
+
+  .lorum_project,
+.about,
+.our_projects,
+.contact_info,
+.main_focus {
+    margin-bottom: 50px;
+  }
+
+  .our_projects,
+.contact_info,
+.main_focus {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .lorum_project {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 50px;
+    background-image: url("./../../assets/global_img/main_img.png");
+  }
+  .lorum_project .lorum_project__info {
+    display: flex;
+  }
+  .lorum_project .lorum_project__info .lorum_project__nav {
+    display: none;
+  }
+  .lorum_project .lorum_project__info .lorum_project__title-1 {
+    color: white;
+  }
+  .lorum_project .lorum_project__gallery {
+    width: auto;
+    height: auto;
+    position: relative;
+    display: flex;
+    background-image: none;
+    justify-content: center;
+  }
+  .lorum_project .lorum_project__gallery-button {
+    position: relative;
+  }
+
+  .about {
+    height: auto;
+    padding: 0 50px 50px 50px;
+  }
+  .about__img {
+    display: none;
+  }
+  .about__body {
+    width: 100%;
+  }
+
+  .our_projects .our_projects__gallery {
+    width: 100%;
+  }
+  .our_projects .our_projects__gallery-up {
+    flex-direction: column;
+  }
+  .our_projects .our_projects__gallery-up img {
+    display: none;
+  }
+  .our_projects .our_projects__gallery-background {
+    height: 180px;
+    width: auto;
+  }
+  .our_projects .our_projects__gallery-low {
+    display: none;
+  }
+
+  .contact_info__body img {
+    display: none;
+  }
+  .contact_info__body .forms__item {
+    width: 300px;
+  }
+
+  .main_focus__info {
+    flex-direction: column;
+    margin: -5% 0;
+    margin-top: 5%;
+  }
+  .main_focus__info-1, .main_focus__info-2 {
+    width: 100%;
+    margin: 5% 0;
+  }
 }/*# sourceMappingURL=style.css.map */
