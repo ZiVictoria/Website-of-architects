@@ -1113,13 +1113,13 @@ body {
   }
   .our_projects .our_projects__gallery-up {
     flex-direction: column;
+    align-items: center;
   }
   .our_projects .our_projects__gallery-up img {
     display: none;
   }
   .our_projects .our_projects__gallery-background {
     height: 180px;
-    width: auto;
   }
   .our_projects .our_projects__gallery-low img:last-child {
     display: none;
