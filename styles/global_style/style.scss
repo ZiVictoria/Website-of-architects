@@ -143,19 +143,19 @@ body {
 //START main_page
 
 //project_lorum
-.project {
+.lorum_project {
     display: flex;
     justify-content: space-between;
     margin-bottom: 120px;
 
-    .project__info {
+    .lorum_project__info {
         display: grid;
         grid-template-columns: 100%;
         grid-template-rows: 57% 35%;
         align-items: center;
         row-gap: 10%;
 
-        .project__title {
+        .lorum_project__title {
             align-self: end;
 
             font-size: $fztitle;
@@ -171,7 +171,7 @@ body {
             }
         }
 
-        .project__nav {
+        .lorum_project__nav {
             display: grid;
             align-self: stretch;
             grid-template-rows: repeat(2, 35%);
@@ -206,7 +206,7 @@ body {
         }
     }
 
-    .project__gallery {
+    .lorum_project__gallery {
         position: relative;
         height: 829px;
         width: 770px;
@@ -344,7 +344,7 @@ body {
     }
 }
 
-.projects {
+.our_projects {
     margin-bottom: 120px;
 
     &__title {
@@ -353,7 +353,7 @@ body {
         font-size: $fztitle;
     }
 
-    .projects__gallery {
+    .our_projects__gallery {
 
         &-up,
         &-low {
@@ -530,7 +530,7 @@ body {
 
 //projects starts
 
-.projects{
+.projects {
     padding-top: 90px;
 
     &__title {
@@ -674,9 +674,9 @@ body {
 // sample project 1 starts
 
 
-.project-1{
+.project-1 {
     padding: 90px 0 6em;
-  
+
     &__title {
         font-size: $fztitle;
         line-height: 50%;

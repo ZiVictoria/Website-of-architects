@@ -190,40 +190,40 @@ body {
   max-width: 100%;
 }
 
-.project {
+.lorum_project {
   display: flex;
   justify-content: space-between;
   margin-bottom: 120px;
 }
-.project .project__info {
+.lorum_project .lorum_project__info {
   display: grid;
   grid-template-columns: 100%;
   grid-template-rows: 57% 35%;
   align-items: center;
   row-gap: 10%;
 }
-.project .project__info .project__title {
+.lorum_project .lorum_project__info .lorum_project__title {
   align-self: end;
   font-size: 44px;
   line-height: 50%;
   font-weight: 300;
 }
-.project .project__info .project__title-1 {
+.lorum_project .lorum_project__info .lorum_project__title-1 {
   font-family: "Roboto-Light";
   font-weight: 300;
   color: #BDBDBD;
 }
-.project .project__info .project__title-2 {
+.lorum_project .lorum_project__info .lorum_project__title-2 {
   font-family: "Roboto-Bold";
   color: #333333;
 }
-.project .project__info .project__nav {
+.lorum_project .lorum_project__info .lorum_project__nav {
   display: grid;
   align-self: stretch;
   grid-template-rows: repeat(2, 35%);
   row-gap: 15%;
 }
-.project .project__info .project__nav__button, .project .project__info .project__nav__count {
+.lorum_project .lorum_project__info .lorum_project__nav__button, .lorum_project .lorum_project__info .lorum_project__nav__count {
   display: flex;
   justify-content: space-between;
   width: 45%;
@@ -232,7 +232,7 @@ body {
   font-weight: 400;
   font-size: 24px;
 }
-.project .project__info .project__nav__button-arrow, .project .project__info .project__nav__count-arrow {
+.lorum_project .lorum_project__info .lorum_project__nav__button-arrow, .lorum_project .lorum_project__info .lorum_project__nav__count-arrow {
   display: flex;
   width: 53px;
   height: 53px;
@@ -241,16 +241,16 @@ body {
   align-items: center;
   color: #333333;
 }
-.project .project__info .project__nav__button-arrow:hover, .project .project__info .project__nav__count-arrow:hover {
+.lorum_project .lorum_project__info .lorum_project__nav__button-arrow:hover, .lorum_project .lorum_project__info .lorum_project__nav__count-arrow:hover {
   cursor: pointer;
 }
-.project .project__gallery {
+.lorum_project .lorum_project__gallery {
   position: relative;
   height: 829px;
   width: 770px;
   background-image: url("./../../assets/global_img/main_img.png");
 }
-.project .project__gallery-button {
+.lorum_project .lorum_project__gallery-button {
   background-color: #333333;
   display: flex;
   justify-content: center;
@@ -263,7 +263,7 @@ body {
   bottom: 0%;
   left: 0%;
 }
-.project .project__gallery-button span {
+.lorum_project .lorum_project__gallery-button span {
   font-family: "Roboto-Regular";
   color: #FFFFFF;
   font-size: 12px;
@@ -271,10 +271,10 @@ body {
   letter-spacing: 0.2em;
   text-transform: uppercase;
 }
-.project .project__gallery-button span {
+.lorum_project .lorum_project__gallery-button span {
   color: #333333;
 }
-.project .project__gallery-button:hover {
+.lorum_project .lorum_project__gallery-button:hover {
   cursor: pointer;
 }
 
@@ -400,28 +400,28 @@ body {
   padding-right: 3%;
 }
 
-.projects {
+.our_projects {
   margin-bottom: 120px;
 }
-.projects__title {
+.our_projects__title {
   font-family: "Roboto-Light";
   font-weight: 300;
   color: #BDBDBD;
   line-height: 50%;
   font-size: 44px;
 }
-.projects .projects__gallery-up, .projects .projects__gallery-low {
+.our_projects .our_projects__gallery-up, .our_projects .our_projects__gallery-low {
   display: flex;
   justify-content: space-between;
   margin-bottom: 3%;
 }
-.projects .projects__gallery-title {
+.our_projects .our_projects__gallery-title {
   font-family: "Roboto-Bold";
   font-size: 44px;
   color: #FFFFFF;
   margin: 15px 0;
 }
-.projects .projects__gallery-background {
+.our_projects .our_projects__gallery-background {
   width: 570px;
   box-sizing: border-box;
   display: flex;
@@ -431,7 +431,7 @@ body {
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("/assets/global_img/sample_background.png");
   color: #FFFFFF;
 }
-.projects .projects__gallery-background .a_btn {
+.our_projects .our_projects__gallery-background .a_btn {
   font-family: "Gothic A1";
   color: #FFFFFF;
   font-size: 12px;
@@ -440,15 +440,15 @@ body {
   text-transform: uppercase;
   text-decoration: none;
 }
-.projects .projects__gallery-background .a_btn:hover {
+.our_projects .our_projects__gallery-background .a_btn:hover {
   color: steelblue;
   cursor: pointer;
 }
-.projects-btn_position {
+.our_projects-btn_position {
   display: flex;
   justify-content: end;
 }
-.projects-btn_position .button {
+.our_projects-btn_position .button {
   background-color: #333333;
   display: flex;
   justify-content: center;
@@ -456,7 +456,7 @@ body {
   width: 222px;
   height: 71px;
 }
-.projects-btn_position .button span {
+.our_projects-btn_position .button span {
   font-family: "Roboto-Regular";
   color: #FFFFFF;
   font-size: 12px;
@@ -464,7 +464,7 @@ body {
   letter-spacing: 0.2em;
   text-transform: uppercase;
 }
-.projects-btn_position .button:hover {
+.our_projects-btn_position .button:hover {
   cursor: pointer;
 }
 
