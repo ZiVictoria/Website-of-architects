@@ -716,6 +716,49 @@ body {
         }
     }
 }
+@media screen and (max-width:768px){
+    .project-1{
+        padding: 0 0 3em;
+    }
+    .project-1__section-1,
+    .project-1__section-3{
+    
+        img{
+            max-width: 65%;
+        }
+    }
+    .project-1__section-2{
+        max-width: 768px;
+        grid-template-columns: 100%;
+        gap: 0;
+
+        img{
+            display: none;
+        }
+    }
+}
+
+@media screen and (max-width:360px){
+    .project-1{
+        padding: 0 0 3em;
+    }
+    .project-1__section-1,
+    .project-1__section-3{
+    
+        img{
+            max-width: 30%;
+        }
+    }
+    .project-1__section-2{
+        max-width: 360px;
+        grid-template-columns: 100%;
+
+        img{
+            display: none;
+        }
+    }
+}
+
 
 // sample project 1 ends
 

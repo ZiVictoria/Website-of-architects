@@ -1036,6 +1036,43 @@ body {
   color: #000000;
 }
 
+@media screen and (max-width: 768px) {
+  .project-1 {
+    padding: 0 0 3em;
+  }
+  .project-1__section-1 img,
+  .project-1__section-3 img {
+    max-width: 65%;
+  }
+  .project-1__section-2 {
+    max-width: 768px;
+    -ms-grid-columns: 100%;
+        grid-template-columns: 100%;
+    gap: 0;
+  }
+  .project-1__section-2 img {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .project-1 {
+    padding: 0 0 3em;
+  }
+  .project-1__section-1 img,
+  .project-1__section-3 img {
+    max-width: 30%;
+  }
+  .project-1__section-2 {
+    max-width: 360px;
+    -ms-grid-columns: 100%;
+        grid-template-columns: 100%;
+  }
+  .project-1__section-2 img {
+    display: none;
+  }
+}
+
 .certifications {
   padding: 90px 0 120px 0;
 }
