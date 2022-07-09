@@ -232,6 +232,9 @@ body {
   font-weight: 400;
   font-size: 24px;
 }
+.lorum_project .lorum_project__info .lorum_project__nav__button-01, .lorum_project .lorum_project__info .lorum_project__nav__count-01 {
+  color: #333333;
+}
 .lorum_project .lorum_project__info .lorum_project__nav__button-arrow, .lorum_project .lorum_project__info .lorum_project__nav__count-arrow {
   display: flex;
   width: 53px;
@@ -243,6 +246,7 @@ body {
 }
 .lorum_project .lorum_project__info .lorum_project__nav__button-arrow:hover, .lorum_project .lorum_project__info .lorum_project__nav__count-arrow:hover {
   cursor: pointer;
+  background-color: #F9F9F9;
 }
 .lorum_project .lorum_project__gallery {
   position: relative;
