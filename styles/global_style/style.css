@@ -999,6 +999,7 @@ body {
 }
 
 .footer {
+  width:100%;
   background-color: #2C2C2C;
   color: #FFFFFF;
 }
