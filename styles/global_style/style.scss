@@ -2,7 +2,10 @@
 
 body {
     color: $base-color;
-    max-width: $lg;
+    width: 100%;
+}
+
+img {
     width: 100%;
 }
 
@@ -69,7 +72,7 @@ body {
 
 //contacts page start
 .main {
-    width: $lg;
+    max-width: $lg;
 }
 
 .contacts_container {
@@ -150,6 +153,7 @@ body {
     margin-bottom: 120px;
 
     .lorum_project__info {
+        width: 30%;
         display: grid;
         grid-template-columns: 100%;
         grid-template-rows: 57% 35%;
@@ -182,7 +186,7 @@ body {
             &__count {
                 display: flex;
                 justify-content: space-between;
-                width: 45%;
+                width: 35%;
                 height: 53px;
 
                 font-family: "Roboto-Regular";
@@ -215,9 +219,11 @@ body {
     .lorum_project__gallery {
         position: relative;
         height: 829px;
-        width: 770px;
+        width: 60%;
 
         background-image: url('./../../assets/global_img/main_img.png');
+        background-repeat: no-repeat;
+        background-size: cover;
 
         &-button {
             @include btn;
@@ -237,7 +243,7 @@ body {
     height: 435px;
     display: flex;
     justify-content: space-between;
-    padding: 0 70px 0 100px;
+    padding: 0 70px 50px 100px;
     margin-bottom: 120px;
 
     background-color: #FBFBFB;
@@ -276,12 +282,12 @@ body {
 
     &__img {
         display: grid;
-        grid-template-columns: repeat(2, 50%);
+        grid-template-columns: repeat(2, 45%);
         grid-template-rows: repeat(10, 10%);
         position: relative;
         top: 25px;
-        column-gap: 3%;
         row-gap: 1%;
+        column-gap: 3%;
 
         img {
             max-width: 100%;
@@ -293,7 +299,7 @@ body {
         }
 
         .grid_img_2 {
-            grid-row: 7/11;
+            grid-row: 8/12;
             grid-column: 1/2;
         }
 
@@ -361,12 +367,49 @@ body {
 
     .our_projects__gallery {
 
+        &-low {
+            img {
+                width: auto;
+            }
+
+            flex-wrap: wrap;
+        }
+
         &-up,
         &-low {
             display: flex;
             justify-content: space-between;
 
             margin-bottom: 3%;
+
+            &-background,
+            &-img {
+                width: 49%;
+            }
+
+            &-background {
+                // width: 570px;
+                box-sizing: border-box;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                padding-left: 7%;
+
+                background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("/assets/global_img/sample_background.png");
+                background-repeat: no-repeat;
+                background-size: cover;
+                color: #FFFFFF;
+
+                .a_btn {
+                    @include a_btn;
+                    text-decoration: none;
+
+                    &:hover {
+                        color: steelblue;
+                        cursor: pointer;
+                    }
+                }
+            }
         }
 
         &-title {
@@ -374,28 +417,6 @@ body {
             font-size: 44px;
             color: #FFFFFF;
             margin: 15px 0;
-        }
-
-        &-background {
-            width: 570px;
-            box-sizing: border-box;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            padding-left: 7%;
-
-            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("/assets/global_img/sample_background.png");
-            color: #FFFFFF;
-
-            .a_btn {
-                @include a_btn;
-                text-decoration: none;
-
-                &:hover {
-                    color: steelblue;
-                    cursor: pointer;
-                }
-            }
         }
     }
 
@@ -424,11 +445,9 @@ body {
 
     &__body {
         display: flex;
+        flex-wrap: wrap;
         justify-content: space-between;
         margin-bottom: 5%;
-
-        height: 369px;
-
     }
 
     .forms__item {
@@ -536,7 +555,7 @@ body {
 
 //projects starts
 
-.projects{
+.projects {
     padding: 90px 0 6em;
 
     &__title {
@@ -559,7 +578,7 @@ body {
 
     &__section-1,
     &__section-2,
-    &__section-3{
+    &__section-3 {
         display: grid;
         grid-template-columns: 55% 45%;
         margin-bottom: 3em;
@@ -567,14 +586,15 @@ body {
         &_left {
             grid-column: 1/2;
 
-            img{
+            img {
                 max-width: 100%;
             }
         }
 
         &_right {
             grid-column: 2/3;
-            background-color: #FBFBFB;;
+            background-color: #FBFBFB;
+            ;
 
             &-title {
                 margin: 1em 0 1.5em 1em;
@@ -675,119 +695,138 @@ body {
     }
 }
 
-@media screen and (max-width:768px){
-    .container{
+@media screen and (max-width:768px) {
+    .container {
         max-width: 768px;
         width: 100%;
     }
-    .header{
+
+    .header {
         width: 100%;
-        &__nav{
+
+        &__nav {
             display: block;
             text-align: right;
         }
     }
-    .projects{
+
+    .projects {
         padding: 0 0 3em;
     }
-    .projects__title{
+
+    .projects__title {
         font-size: 1.75em;
     }
+
     .projects__section-1,
     .projects__section-2,
-    .projects__section-3{
+    .projects__section-3 {
         max-width: 768px;
         grid-template-columns: 100%;
         grid-template-rows: repeat(2, 1fr);
         margin-bottom: 1em;
-        
-        img{
+
+        img {
             max-width: 100%;
         }
     }
+
     .projects__section-1_left,
     .projects__section-2_left,
-    .projects__section-3_left{
+    .projects__section-3_left {
         grid-column: 1/2;
         grid-row: 1/2;
         display: flex;
         justify-content: center;
         align-items: center;
     }
+
     .projects__section-1_right,
     .projects__section-2_right,
-    .projects__section-3_right{
+    .projects__section-3_right {
         grid-column: 1/2;
         grid-row: 2/3;
     }
+
     .projects__section-1_right-text,
     .projects__section-2_right-text,
-    .projects__section-3_right-text{
+    .projects__section-3_right-text {
         width: 90%;
     }
-    .projects__nav{
+
+    .projects__nav {
         width: 100%;
-        
+
     }
 }
-@media screen and (max-width:360px){
-    .container{
+
+@media screen and (max-width:360px) {
+    .container {
         max-width: 360px;
         width: 100%;
     }
-    .projects{
+
+    .projects {
         padding: 0 0 3em;
     }
-    .projects__title{
+
+    .projects__title {
         font-size: 1.75em;
     }
+
     .projects__section-1,
     .projects__section-2,
-    .projects__section-3{
+    .projects__section-3 {
         max-width: 360px;
         grid-template-columns: 100%;
         grid-template-rows: repeat(2, 1fr);
         margin-bottom: 1em;
-        
-        img{
+
+        img {
             max-width: 100%;
         }
     }
+
     .projects__section-1_left,
     .projects__section-2_left,
-    .projects__section-3_left{
+    .projects__section-3_left {
         grid-column: 1/2;
         grid-row: 1/2;
         display: flex;
         justify-content: center;
         align-items: stretch;
     }
+
     .projects__section-1_right,
     .projects__section-2_right,
-    .projects__section-3_right{
+    .projects__section-3_right {
         grid-column: 1/2;
         grid-row: 2/3;
     }
+
     .projects__section-1_right-title,
     .projects__section-2_right-title,
-    .projects__section-3_right-title{
+    .projects__section-3_right-title {
         margin: 0.2em 0 0.2em 1em;
         font-size: 1.5em;
     }
+
     .projects__section-1_right-text,
     .projects__section-2_right-text,
-    .projects__section-3_right-text{
+    .projects__section-3_right-text {
         margin: 0 0 0.5em 1.5em;
     }
+
     .link__projects,
     .projects__section-2_right-btn,
-    .projects__section-3_right-btn{
+    .projects__section-3_right-btn {
         width: 145px;
         height: 46px;
         margin-bottom: 1em;
         font-size: 0.5em;
     }
-    .projects__nav{
+
+    .projects__nav {
         width: 100%;
         font-size: 1em;
     }
@@ -822,7 +861,7 @@ body {
     &__section-1 {
         margin-bottom: 1.5em;
 
-        img{
+        img {
             max-width: 100%;
         }
     }
@@ -833,7 +872,7 @@ body {
         gap: 1em;
         margin-bottom: 1.5em;
 
-        img{
+        img {
             max-width: 100%;
         }
 
@@ -848,65 +887,74 @@ body {
         }
     }
 
-    &__section-3{
-        img{
+    &__section-3 {
+        img {
             max-width: 100%;
         }
     }
 }
-@media screen and (max-width:768px){
-    .container{
+
+@media screen and (max-width:768px) {
+    .container {
         max-width: 768px;
         width: 100%;
     }
-    .project-1{
+
+    .project-1 {
         padding: 0 0 3em;
     }
-    .project-1__title{
+
+    .project-1__title {
         font-size: 1.75em;
     }
+
     .project-1__section-1,
-    .project-1__section-3{
-    
-        img{
+    .project-1__section-3 {
+
+        img {
             max-width: 100%;
         }
     }
-    .project-1__section-2{
+
+    .project-1__section-2 {
         max-width: 768px;
         grid-template-columns: 100%;
         gap: 0;
 
-        img{
+        img {
             display: none;
         }
     }
 }
 
-@media screen and (max-width:360px){
-    .container{
+@media screen and (max-width:360px) {
+    .container {
         max-width: 360px;
         width: 100%;
     }
-    .project-1{
+
+    .project-1 {
         padding: 0 0 3em;
     }
-    .project-1__title{
+
+    .project-1__title {
         font-size: 1.25em;
     }
+
     .project-1__section-1,
-    .project-1__section-3{
-    
-        img{
+    .project-1__section-3 {
+
+        img {
             max-width: 100%;
         }
     }
-    .project-1__section-2{
+
+    .project-1__section-2 {
         max-width: 360px;
         grid-template-columns: 100%;
         gap: 0;
 
-        img{
+        img {
             display: none;
         }
     }
@@ -945,7 +993,7 @@ body {
 }
 
 .footer {
-    width:100%;
+    width: 100%;
     background-color: $footer-color;
     color: #FFFFFF;
 
@@ -1159,10 +1207,16 @@ body {
 
     // ширина до 360px
     .main {
-        max-width: 360px;
+        width: 90%;
+        max-width: $xs;
+        margin: 0 auto;
 
         h2 {
             font-size: 1.5em;
+        }
+
+        p {
+            font-size: 1em;
         }
     }
 
@@ -1191,12 +1245,16 @@ body {
 
         .lorum_project__info {
             display: flex;
+            width: 100%;
+            justify-content: center;
 
             .lorum_project__nav {
                 display: none;
             }
 
             .lorum_project__title {
+                font-size: 1.5em;
+
                 &-1 {
                     color: white;
                 }
@@ -1241,11 +1299,12 @@ body {
                 img {
                     display: none;
                 }
-            }
 
-            &-background {
-                height: 180px;
-                width: auto;
+                &-background {
+                    height: 180px;
+                    width: 100%;
+                    padding-bottom: 5%;
+                }
             }
 
             &-low {
@@ -1269,6 +1328,13 @@ body {
     }
 
     .main_focus {
+        h2 {
+            font-size: 1.3em;
+        }
+
+        .big_number {
+            font-size: 10em;
+        }
 
         &__info {
             flex-direction: column;
@@ -1288,9 +1354,15 @@ body {
     .main {
         min-width: 360px;
         max-width: 768px;
+        width: 90%;
+        margin: 0 auto;
 
         h2 {
             font-size: 2.5em;
+        }
+
+        p {
+            font-size: 1em;
         }
     }
 
@@ -1320,12 +1392,16 @@ body {
 
         .lorum_project__info {
             display: flex;
+            width: 100%;
+            justify-content: center;
 
             .lorum_project__nav {
                 display: none;
             }
 
             .lorum_project__title {
+                font-size: 1.5em;
+
                 &-1 {
                     color: white;
                 }
@@ -1362,7 +1438,11 @@ body {
     .our_projects {
 
         .our_projects__gallery {
-            width: 100%;
+            width: 80%;
+
+            img {
+                width: 100%;
+            }
 
             &-up {
                 flex-direction: column;
@@ -1371,14 +1451,19 @@ body {
                 img {
                     display: none;
                 }
+
+                &-background {
+                    height: 180px;
+                    width: 100%;
+                    padding-bottom: 5%;
+                }
             }
 
-            &-background {
-                height: 180px;
-                // width: auto;
+            &-low {
+                flex-wrap: wrap;
             }
 
-            &-low img:last-child {
+            &-low img:nth-child(odd) {
                 display: none;
             }
         }
@@ -1402,25 +1487,51 @@ body {
         }
     }
 
-    .contacts_container{
-        .wrapper{
+    .main_focus {
+        h2 {
+            font-size: 1.3em;
+        }
+
+        .big_number {
+            font-size: 10em;
+        }
+
+        &__info {
+            flex-direction: column;
+            margin: -5% 0;
+            margin-top: 5%;
+
+            &-1,
+            &-2 {
+                width: 100%;
+                margin: 5% 0;
+            }
+        }
+    }
+
+    .contacts_container {
+        .wrapper {
             display: grid;
-            grid-template-columns:  1fr;
+            grid-template-columns: 1fr;
             grid-template-rows: 1fr;
-            .contacts{
-                &__title{
+
+            .contacts {
+                &__title {
                     display: flex;
                     gap: 20px;
                     font-size: 1.5em;
                 }
-                &__text{
+
+                &__text {
                     display: flex;
                     justify-content: flex-start;
                 }
             }
-            .contacts-image{
+
+            .contacts-image {
                 width: 100%;
-                img{
+
+                img {
                     max-width: 70vw;
                 }
             }
