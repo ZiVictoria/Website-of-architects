@@ -421,11 +421,18 @@ img {
   line-height: 50%;
   font-size: 2.5em;
 }
-.our_projects .our_projects__gallery-low {
-  flex-wrap: wrap;
-}
 .our_projects .our_projects__gallery-low img {
   width: auto;
+  min-width: 0;
+}
+.our_projects .our_projects__gallery-low img:not(:last-child) {
+  margin-right: 3%;
+}
+.our_projects .our_projects__gallery-low img:nth-child(2n+1) {
+  flex-grow: 1;
+}
+.our_projects .our_projects__gallery-low img:nth-child(2) {
+  flex-grow: 2;
 }
 .our_projects .our_projects__gallery-up, .our_projects .our_projects__gallery-low {
   display: flex;
@@ -1330,6 +1337,9 @@ img {
   }
   .our_projects .our_projects__gallery-low img:nth-child(odd) {
     display: none;
+  }
+  .our_projects .our_projects__gallery-low img:nth-child(2) {
+    margin-right: 0;
   }
   .contact_info__body {
     display: flex;
