@@ -19,9 +19,10 @@ body {
 .header {
     display: flex;
     margin: 30px 49px;
+    gap: 50px;
 
     &__logo {
-        flex-basis: 34%;
+        flex-basis: 30%;
 
         img {
             width: 68px;
@@ -678,6 +679,13 @@ body {
     .container{
         max-width: 768px;
         width: 100%;
+    }
+    .header{
+        width: 100%;
+        &__nav{
+            display: block;
+            text-align: right;
+        }
     }
     .projects{
         padding: 0 0 3em;

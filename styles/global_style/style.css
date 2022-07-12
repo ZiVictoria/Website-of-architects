@@ -93,11 +93,12 @@ body {
   display: -ms-flexbox;
   display: flex;
   margin: 30px 49px;
+  gap: 50px;
 }
 
 .header__logo {
-  -ms-flex-preferred-size: 34%;
-      flex-basis: 34%;
+  -ms-flex-preferred-size: 30%;
+      flex-basis: 30%;
 }
 
 .header__logo img {
@@ -996,6 +997,13 @@ body {
   .container {
     max-width: 768px;
     width: 100%;
+  }
+  .header {
+    width: 100%;
+  }
+  .header__nav {
+    display: block;
+    text-align: right;
   }
   .projects {
     padding: 0 0 3em;
