@@ -58,14 +58,13 @@ $sm:768px;
 $xs:360px;
 
 //шрифт для заголовков на страницах сделала поменьше, чем в макете. 64-й сильно огромный получается -_- /Lilly
-$fztitle: 44px;
+$fztitle: 2.5em;
 $fzp: 16px;
 $lhtitle: 64px; //line-height
 $lhp: 25px; //line-height p
 
 @mixin container {
-	max-width: 1170px;
-	width: 100%;
+	width: 90%;
 	margin: 0 auto;
 }
 
@@ -132,8 +131,7 @@ $lhp: 25px; //line-height p
 	padding-right: 3%;
 }
 
-@mixin btn__projects{
-	margin-left: 2.5em;
+@mixin btn__projects {
 	padding: 0;
 	width: 222px;
 	height: 71px;
