@@ -194,12 +194,12 @@ img {
   max-width: 100%;
 }
 
-.lorum_project {
+.project-lorum {
   display: flex;
   justify-content: space-between;
   margin-bottom: 120px;
 }
-.lorum_project .lorum_project__info {
+.project-lorum__info {
   width: 30%;
   display: grid;
   grid-template-columns: 100%;
@@ -207,28 +207,28 @@ img {
   align-items: center;
   row-gap: 10%;
 }
-.lorum_project .lorum_project__info .lorum_project__title {
+.project-lorum__title {
   align-self: end;
   font-size: 2.5em;
   line-height: 50%;
   font-weight: 300;
 }
-.lorum_project .lorum_project__info .lorum_project__title-1 {
+.project-lorum__title--up {
   font-family: "Roboto-Light";
   font-weight: 300;
   color: #BDBDBD;
 }
-.lorum_project .lorum_project__info .lorum_project__title-2 {
+.project-lorum__title--low {
   font-family: "Roboto-Bold";
   color: #333333;
 }
-.lorum_project .lorum_project__info .lorum_project__nav {
+.project-lorum__nav {
   display: grid;
   align-self: stretch;
   grid-template-rows: repeat(2, 35%);
   row-gap: 15%;
 }
-.lorum_project .lorum_project__info .lorum_project__nav__button, .lorum_project .lorum_project__info .lorum_project__nav__count {
+.project-lorum__buttons, .project-lorum__count {
   display: flex;
   justify-content: space-between;
   width: 35%;
@@ -237,10 +237,10 @@ img {
   font-weight: 400;
   font-size: 24px;
 }
-.lorum_project .lorum_project__info .lorum_project__nav__button-01, .lorum_project .lorum_project__info .lorum_project__nav__count-01 {
+.project-lorum__buttons--01, .project-lorum__count--01 {
   color: #333333;
 }
-.lorum_project .lorum_project__info .lorum_project__nav__button-arrow, .lorum_project .lorum_project__info .lorum_project__nav__count-arrow {
+.project-lorum__buttons--arrow, .project-lorum__count--arrow {
   display: flex;
   width: 53px;
   height: 53px;
@@ -249,11 +249,11 @@ img {
   align-items: center;
   color: #333333;
 }
-.lorum_project .lorum_project__info .lorum_project__nav__button-arrow:hover, .lorum_project .lorum_project__info .lorum_project__nav__count-arrow:hover {
+.project-lorum__buttons--arrow:hover, .project-lorum__count--arrow:hover {
   cursor: pointer;
   background-color: #F9F9F9;
 }
-.lorum_project .lorum_project__gallery {
+.project-lorum__gallery {
   position: relative;
   height: 829px;
   width: 60%;
@@ -261,7 +261,7 @@ img {
   background-repeat: no-repeat;
   background-size: cover;
 }
-.lorum_project .lorum_project__gallery-button {
+.project-lorum__button {
   background-color: #333333;
   display: flex;
   justify-content: center;
@@ -274,7 +274,7 @@ img {
   bottom: 0%;
   left: 0%;
 }
-.lorum_project .lorum_project__gallery-button span {
+.project-lorum__button span {
   font-family: "Roboto-Regular";
   color: #FFFFFF;
   font-size: 12px;
@@ -282,14 +282,14 @@ img {
   letter-spacing: 0.2em;
   text-transform: uppercase;
 }
-.lorum_project .lorum_project__gallery-button span {
+.project-lorum__button span {
   color: #333333;
 }
-.lorum_project .lorum_project__gallery-button:hover {
+.project-lorum__button:hover {
   cursor: pointer;
 }
 
-.about {
+.about-information {
   height: 435px;
   display: flex;
   justify-content: space-between;
@@ -297,7 +297,7 @@ img {
   margin-bottom: 120px;
   background-color: #FBFBFB;
 }
-.about-button {
+.about-information__button {
   background-color: #333333;
   display: flex;
   justify-content: center;
@@ -307,7 +307,7 @@ img {
   background-color: #FFFFFF;
   border: none;
 }
-.about-button span {
+.about-information__button span {
   font-family: "Roboto-Regular";
   color: #FFFFFF;
   font-size: 12px;
@@ -315,34 +315,32 @@ img {
   letter-spacing: 0.2em;
   text-transform: uppercase;
 }
-.about-button span {
+.about-information__button span {
   color: #333333;
 }
-.about-button:hover {
+.about-information__button:hover {
   cursor: pointer;
 }
-.about__title {
+.about-information__title {
   font-family: "Roboto-Light";
   font-weight: 300;
   color: #BDBDBD;
   line-height: 50%;
   font-size: 2.5em;
 }
-.about__img {
-  width: 55%;
-}
-.about__body {
+.about-information__text {
   width: 40%;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
 }
-.about__body p {
+.about-information__text p {
   font-size: 16px;
   color: rgb(0, 0, 0);
   line-height: 25px;
 }
-.about__img {
+.about-information__img {
+  width: 55%;
   display: grid;
   grid-template-columns: repeat(2, 45%);
   grid-template-rows: repeat(10, 10%);
@@ -352,26 +350,23 @@ img {
   -moz-column-gap: 3%;
        column-gap: 3%;
 }
-.about__img img {
-  max-width: 100%;
-}
-.about__img .grid_img_1 {
+.about-information__img--1 {
   grid-row: 1/5;
   grid-column: 1/2;
 }
-.about__img .grid_img_2 {
+.about-information__img--2 {
   grid-row: 8/12;
   grid-column: 1/2;
 }
-.about__img .grid_img_3 {
+.about-information__img--3 {
   grid-row: 2/9;
   grid-column: 2/3;
 }
 
-.main_focus {
+.main-focus {
   margin-bottom: 120px;
 }
-.main_focus__title {
+.main-focus__title {
   font-family: "Roboto-Light";
   font-weight: 300;
   color: #BDBDBD;
@@ -379,16 +374,22 @@ img {
   font-size: 2.5em;
   line-height: 50%;
 }
-.main_focus__info {
+.main-focus__info {
   display: flex;
   justify-content: space-between;
   margin-top: 5%;
 }
-.main_focus__info-1, .main_focus__info-2 {
+.main-focus__info--1 {
+  width: 35%;
+}
+.main-focus__info--2 {
+  width: 45%;
+}
+.main-focus__info--1, .main-focus__info--2 {
   display: flex;
   align-items: center;
 }
-.main_focus__info-1 p, .main_focus__info-2 p {
+.main-focus__info--1 p, .main-focus__info--2 p {
   margin: 0;
   font-size: 22px;
   font-weight: 400;
@@ -397,13 +398,7 @@ img {
   text-align: left;
   color: black;
 }
-.main_focus__info-1 {
-  width: 35%;
-}
-.main_focus__info-2 {
-  width: 45%;
-}
-.main_focus .big_number {
+.main-focus .big_number {
   font-family: "Roboto-Black";
   color: rgb(242, 242, 242);
   font-size: 200px;
@@ -411,38 +406,38 @@ img {
   padding-right: 3%;
 }
 
-.our_projects {
+.our-projects {
   margin-bottom: 120px;
 }
-.our_projects__title {
+.our-projects__title {
   font-family: "Roboto-Light";
   font-weight: 300;
   color: #BDBDBD;
   line-height: 50%;
   font-size: 2.5em;
 }
-.our_projects .our_projects__gallery-low img {
+.our-projects .our-projects__gallery-low img {
   width: auto;
   min-width: 0;
 }
-.our_projects .our_projects__gallery-low img:not(:last-child) {
+.our-projects .our-projects__gallery-low img:not(:last-child) {
   margin-right: 3%;
 }
-.our_projects .our_projects__gallery-low img:nth-child(2n+1) {
+.our-projects .our-projects__gallery-low img:nth-child(2n+1) {
   flex-grow: 1;
 }
-.our_projects .our_projects__gallery-low img:nth-child(2) {
+.our-projects .our-projects__gallery-low img:nth-child(2) {
   flex-grow: 2;
 }
-.our_projects .our_projects__gallery-up, .our_projects .our_projects__gallery-low {
+.our-projects .our-projects__gallery-up, .our-projects .our-projects__gallery-low {
   display: flex;
   justify-content: space-between;
   margin-bottom: 3%;
 }
-.our_projects .our_projects__gallery-up-background, .our_projects .our_projects__gallery-up-img, .our_projects .our_projects__gallery-low-background, .our_projects .our_projects__gallery-low-img {
+.our-projects .our-projects__gallery-up-background, .our-projects .our-projects__gallery-up-img, .our-projects .our-projects__gallery-low-background, .our-projects .our-projects__gallery-low-img {
   width: 49%;
 }
-.our_projects .our_projects__gallery-up-background, .our_projects .our_projects__gallery-low-background {
+.our-projects .our-projects__gallery-up-background, .our-projects .our-projects__gallery-low-background {
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
@@ -453,7 +448,7 @@ img {
   background-size: cover;
   color: #FFFFFF;
 }
-.our_projects .our_projects__gallery-up-background .a_btn, .our_projects .our_projects__gallery-low-background .a_btn {
+.our-projects .our-projects__gallery-up-background .a_btn, .our-projects .our-projects__gallery-low-background .a_btn {
   font-family: "Gothic A1";
   color: #FFFFFF;
   font-size: 12px;
@@ -462,21 +457,21 @@ img {
   text-transform: uppercase;
   text-decoration: none;
 }
-.our_projects .our_projects__gallery-up-background .a_btn:hover, .our_projects .our_projects__gallery-low-background .a_btn:hover {
+.our-projects .our-projects__gallery-up-background .a_btn:hover, .our-projects .our-projects__gallery-low-background .a_btn:hover {
   color: steelblue;
   cursor: pointer;
 }
-.our_projects .our_projects__gallery-title {
+.our-projects .our-projects__gallery-title {
   font-family: "Roboto-Bold";
   font-size: 44px;
   color: #FFFFFF;
   margin: 15px 0;
 }
-.our_projects-btn_position {
+.our-projects-btn_position {
   display: flex;
   justify-content: end;
 }
-.our_projects-btn_position .button {
+.our-projects-btn_position .button {
   background-color: #333333;
   display: flex;
   justify-content: center;
@@ -484,7 +479,7 @@ img {
   width: 222px;
   height: 71px;
 }
-.our_projects-btn_position .button span {
+.our-projects-btn_position .button span {
   font-family: "Roboto-Regular";
   color: #FFFFFF;
   font-size: 12px;
@@ -492,34 +487,34 @@ img {
   letter-spacing: 0.2em;
   text-transform: uppercase;
 }
-.our_projects-btn_position .button:hover {
+.our-projects-btn_position .button:hover {
   cursor: pointer;
 }
 
-.contact_info {
+.contact-info {
   margin-bottom: 120px;
 }
-.contact_info__title {
+.contact-info__title {
   font-family: "Roboto-Light";
   font-weight: 300;
   color: #BDBDBD;
   line-height: 64px;
   font-size: 2.5em;
 }
-.contact_info__body {
+.contact-info__content {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   margin-bottom: 5%;
 }
-.contact_info .forms__item {
+.contact-info .forms__item {
   width: 391px;
 }
-.contact_info .forms__item input,
-.contact_info .forms__item textarea {
+.contact-info .forms__item input,
+.contact-info .forms__item textarea {
   width: 100%;
 }
-.contact_info-button {
+.contact-info__button {
   background-color: #333333;
   display: flex;
   justify-content: center;
@@ -527,7 +522,7 @@ img {
   width: 222px;
   height: 71px;
 }
-.contact_info-button span {
+.contact-info__button span {
   font-family: "Roboto-Regular";
   color: #FFFFFF;
   font-size: 12px;
@@ -535,7 +530,7 @@ img {
   letter-spacing: 0.2em;
   text-transform: uppercase;
 }
-.contact_info-button:hover {
+.contact-info__button:hover {
   cursor: pointer;
 }
 
@@ -1138,9 +1133,8 @@ img {
     grid-column: 1/3;
   }
 }
-@media screen and (max-width: 360px) {
+@media screen and (width: 360px) {
   .main {
-    width: 90%;
     max-width: 360px;
     margin: 0 auto;
   }
@@ -1150,42 +1144,42 @@ img {
   .main p {
     font-size: 1em;
   }
-  .lorum_project,
-.about,
-.our_projects,
-.contact_info,
-.main_focus {
+  .project-lorum,
+.about-information,
+.our-projects,
+.contact-info,
+.main-focus {
     margin-bottom: 50px;
   }
-  .our_projects,
-.contact_info,
-.main_focus {
+  .our-projects,
+.contact-info,
+.main-focus {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
-  .lorum_project {
+  .project-lorum {
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding-bottom: 50px;
     background-image: url("./../../assets/global_img/main_img.png");
   }
-  .lorum_project .lorum_project__info {
+  .project-lorum__info {
     display: flex;
     width: 100%;
     justify-content: center;
   }
-  .lorum_project .lorum_project__info .lorum_project__nav {
-    display: none;
-  }
-  .lorum_project .lorum_project__info .lorum_project__title {
+  .project-lorum__title {
     font-size: 1.5em;
   }
-  .lorum_project .lorum_project__info .lorum_project__title-1 {
+  .project-lorum__title--up {
     color: white;
   }
-  .lorum_project .lorum_project__gallery {
+  .project-lorum__nav {
+    display: none;
+  }
+  .project-lorum__gallery {
     width: auto;
     height: auto;
     position: relative;
@@ -1193,199 +1187,56 @@ img {
     background-image: none;
     justify-content: center;
   }
-  .lorum_project .lorum_project__gallery-button {
+  .project-lorum__button {
     position: relative;
   }
-  .about {
+  .about-information {
     height: auto;
     padding: 0 50px 50px 50px;
   }
-  .about__img {
+  .about-information__img {
     display: none;
   }
-  .about__body {
+  .about-information__text {
     width: 100%;
   }
-  .our_projects .our_projects__gallery {
+  .main-focus h2 {
+    font-size: 1.3em;
+  }
+  .main-focus .big_number {
+    font-size: 10em;
+  }
+  .main-focus__info {
+    flex-direction: column;
+    margin: -5% 0;
+    margin-top: 5%;
+    padding: 0 3%;
+  }
+  .main-focus__info--1, .main-focus__info--2 {
+    width: 85%;
+    margin: 5% 0;
+  }
+  .our-projects .our-projects__gallery {
     width: 100%;
   }
-  .our_projects .our_projects__gallery-up {
+  .our-projects .our-projects__gallery-up {
     flex-direction: column;
   }
-  .our_projects .our_projects__gallery-up img {
+  .our-projects .our-projects__gallery-up img {
     display: none;
   }
-  .our_projects .our_projects__gallery-up-background {
+  .our-projects .our-projects__gallery-up-background {
     height: 180px;
     width: 100%;
     padding-bottom: 5%;
   }
-  .our_projects .our_projects__gallery-low {
+  .our-projects .our-projects__gallery-low {
     display: none;
   }
-  .contact_info__body img {
+  .contact-info__content img {
     display: none;
   }
-  .contact_info__body .forms__item {
+  .contact-info__content .forms__item {
     max-width: 300px;
-  }
-  .main_focus h2 {
-    font-size: 1.3em;
-  }
-  .main_focus .big_number {
-    font-size: 10em;
-  }
-  .main_focus__info {
-    flex-direction: column;
-    margin: -5% 0;
-    margin-top: 5%;
-  }
-  .main_focus__info-1, .main_focus__info-2 {
-    width: 100%;
-    margin: 5% 0;
-  }
-}
-@media screen and (min-width: 360px) and (max-width: 768px) {
-  .main {
-    min-width: 360px;
-    max-width: 768px;
-    width: 90%;
-    margin: 0 auto;
-  }
-  .main h2 {
-    font-size: 2.5em;
-  }
-  .main p {
-    font-size: 1em;
-  }
-  .lorum_project,
-.about,
-.our_projects,
-.contact_info,
-.main_focus {
-    margin-bottom: 50px;
-  }
-  .our_projects,
-.contact_info,
-.main_focus {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  .lorum_project {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding-bottom: 50px;
-    background-image: url("./../../assets/global_img/main_img.png");
-  }
-  .lorum_project .lorum_project__info {
-    display: flex;
-    width: 100%;
-    justify-content: center;
-  }
-  .lorum_project .lorum_project__info .lorum_project__nav {
-    display: none;
-  }
-  .lorum_project .lorum_project__info .lorum_project__title {
-    font-size: 1.5em;
-  }
-  .lorum_project .lorum_project__info .lorum_project__title-1 {
-    color: white;
-  }
-  .lorum_project .lorum_project__gallery {
-    width: auto;
-    height: auto;
-    position: relative;
-    display: flex;
-    background-image: none;
-    justify-content: center;
-  }
-  .lorum_project .lorum_project__gallery-button {
-    position: relative;
-  }
-  .about {
-    height: auto;
-    padding: 0 50px 50px 50px;
-  }
-  .about__img {
-    display: none;
-  }
-  .about__body {
-    width: 100%;
-  }
-  .our_projects .our_projects__gallery {
-    width: 80%;
-  }
-  .our_projects .our_projects__gallery img {
-    width: 100%;
-  }
-  .our_projects .our_projects__gallery-up {
-    flex-direction: column;
-    align-items: center;
-  }
-  .our_projects .our_projects__gallery-up img {
-    display: none;
-  }
-  .our_projects .our_projects__gallery-up-background {
-    height: 180px;
-    width: 100%;
-    padding-bottom: 5%;
-  }
-  .our_projects .our_projects__gallery-low {
-    flex-wrap: wrap;
-  }
-  .our_projects .our_projects__gallery-low img:nth-child(odd) {
-    display: none;
-  }
-  .our_projects .our_projects__gallery-low img:nth-child(2) {
-    margin-right: 0;
-  }
-  .contact_info__body {
-    display: flex;
-    flex-direction: column;
-    height: auto;
-  }
-  .contact_info__body .forms__item {
-    min-width: 360px;
-    max-width: 700px;
-  }
-  .contact_info__body img {
-    display: none;
-  }
-  .main_focus h2 {
-    font-size: 1.3em;
-  }
-  .main_focus .big_number {
-    font-size: 10em;
-  }
-  .main_focus__info {
-    flex-direction: column;
-    margin: -5% 0;
-    margin-top: 5%;
-  }
-  .main_focus__info-1, .main_focus__info-2 {
-    width: 100%;
-    margin: 5% 0;
-  }
-  .contacts_container .wrapper {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
-  }
-  .contacts_container .wrapper .contacts__title {
-    display: flex;
-    gap: 20px;
-    font-size: 1.5em;
-  }
-  .contacts_container .wrapper .contacts__text {
-    display: flex;
-    justify-content: flex-start;
-  }
-  .contacts_container .wrapper .contacts-image {
-    width: 100%;
-  }
-  .contacts_container .wrapper .contacts-image img {
-    max-width: 70vw;
   }
 }/*# sourceMappingURL=style.css.map */
