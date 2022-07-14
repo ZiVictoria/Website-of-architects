@@ -209,16 +209,16 @@ img {
 }
 .project-lorum__title {
   align-self: end;
-  font-size: 2.5em;
+  font-size: 2em;
   line-height: 50%;
   font-weight: 300;
 }
-.project-lorum__title--up {
+.project-lorum__title-up {
   font-family: "Roboto-Light";
   font-weight: 300;
   color: #BDBDBD;
 }
-.project-lorum__title--low {
+.project-lorum__title-low {
   font-family: "Roboto-Bold";
   color: #333333;
 }
@@ -237,10 +237,10 @@ img {
   font-weight: 400;
   font-size: 24px;
 }
-.project-lorum__buttons--01, .project-lorum__count--01 {
+.project-lorum__buttons-01, .project-lorum__count-01 {
   color: #333333;
 }
-.project-lorum__buttons--arrow, .project-lorum__count--arrow {
+.project-lorum__buttons-arrow, .project-lorum__count-arrow {
   display: flex;
   width: 53px;
   height: 53px;
@@ -249,7 +249,7 @@ img {
   align-items: center;
   color: #333333;
 }
-.project-lorum__buttons--arrow:hover, .project-lorum__count--arrow:hover {
+.project-lorum__buttons-arrow:hover, .project-lorum__count-arrow:hover {
   cursor: pointer;
   background-color: #F9F9F9;
 }
@@ -350,15 +350,15 @@ img {
   -moz-column-gap: 3%;
        column-gap: 3%;
 }
-.about-information__img--1 {
+.about-information__img-1 {
   grid-row: 1/5;
   grid-column: 1/2;
 }
-.about-information__img--2 {
+.about-information__img-2 {
   grid-row: 8/12;
   grid-column: 1/2;
 }
-.about-information__img--3 {
+.about-information__img-3 {
   grid-row: 2/9;
   grid-column: 2/3;
 }
@@ -377,19 +377,19 @@ img {
 .main-focus__info {
   display: flex;
   justify-content: space-between;
-  margin-top: 5%;
 }
-.main-focus__info--1 {
+.main-focus__info-1 {
   width: 35%;
 }
-.main-focus__info--2 {
+.main-focus__info-2 {
   width: 45%;
 }
-.main-focus__info--1, .main-focus__info--2 {
+.main-focus__info-1, .main-focus__info-2 {
   display: flex;
   align-items: center;
+  margin-top: 5%;
 }
-.main-focus__info--1 p, .main-focus__info--2 p {
+.main-focus__info-1 p, .main-focus__info-2 p {
   margin: 0;
   font-size: 22px;
   font-weight: 400;
@@ -416,28 +416,15 @@ img {
   line-height: 50%;
   font-size: 2.5em;
 }
-.our-projects .our-projects__gallery-low img {
-  width: auto;
-  min-width: 0;
-}
-.our-projects .our-projects__gallery-low img:not(:last-child) {
-  margin-right: 3%;
-}
-.our-projects .our-projects__gallery-low img:nth-child(2n+1) {
-  flex-grow: 1;
-}
-.our-projects .our-projects__gallery-low img:nth-child(2) {
-  flex-grow: 2;
-}
-.our-projects .our-projects__gallery-up, .our-projects .our-projects__gallery-low {
+.our-projects__gallery {
   display: flex;
   justify-content: space-between;
   margin-bottom: 3%;
 }
-.our-projects .our-projects__gallery-up-background, .our-projects .our-projects__gallery-up-img, .our-projects .our-projects__gallery-low-background, .our-projects .our-projects__gallery-low-img {
+.our-projects__img-container, .our-projects__background-container {
   width: 49%;
 }
-.our-projects .our-projects__gallery-up-background, .our-projects .our-projects__gallery-low-background {
+.our-projects__background-container {
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
@@ -448,7 +435,49 @@ img {
   background-size: cover;
   color: #FFFFFF;
 }
-.our-projects .our-projects__gallery-up-background .a_btn, .our-projects .our-projects__gallery-low-background .a_btn {
+.our-projects__background-title {
+  font-family: "Roboto-Bold";
+  font-size: 44px;
+  color: #FFFFFF;
+  margin: 15px 0;
+}
+.our-projects__img3, .our-projects__img4, .our-projects__img5 {
+  width: auto;
+  min-width: 0;
+}
+.our-projects__img3, .our-projects__img4 {
+  margin-right: 3%;
+}
+.our-projects__img3, .our-projects__img5 {
+  flex-grow: 1;
+}
+.our-projects__img4 {
+  flex-grow: 2;
+}
+.our-projects__button-container {
+  display: flex;
+  justify-content: end;
+}
+.our-projects__button-project {
+  background-color: #333333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 222px;
+  height: 71px;
+}
+.our-projects__button-project span {
+  font-family: "Roboto-Regular";
+  color: #FFFFFF;
+  font-size: 12px;
+  line-height: 12px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+.our-projects__button-project:hover {
+  cursor: pointer;
+}
+.our-projects__link {
   font-family: "Gothic A1";
   color: #FFFFFF;
   font-size: 12px;
@@ -457,37 +486,8 @@ img {
   text-transform: uppercase;
   text-decoration: none;
 }
-.our-projects .our-projects__gallery-up-background .a_btn:hover, .our-projects .our-projects__gallery-low-background .a_btn:hover {
+.our-projects__link:hover {
   color: steelblue;
-  cursor: pointer;
-}
-.our-projects .our-projects__gallery-title {
-  font-family: "Roboto-Bold";
-  font-size: 44px;
-  color: #FFFFFF;
-  margin: 15px 0;
-}
-.our-projects-btn_position {
-  display: flex;
-  justify-content: end;
-}
-.our-projects-btn_position .button {
-  background-color: #333333;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 222px;
-  height: 71px;
-}
-.our-projects-btn_position .button span {
-  font-family: "Roboto-Regular";
-  color: #FFFFFF;
-  font-size: 12px;
-  line-height: 12px;
-  letter-spacing: 0.2em;
-  text-transform: uppercase;
-}
-.our-projects-btn_position .button:hover {
   cursor: pointer;
 }
 
@@ -1173,7 +1173,7 @@ img {
   .project-lorum__title {
     font-size: 1.5em;
   }
-  .project-lorum__title--up {
+  .project-lorum__title-up {
     color: white;
   }
   .project-lorum__nav {
@@ -1211,27 +1211,22 @@ img {
     margin: -5% 0;
     margin-top: 5%;
     padding: 0 3%;
+    width: 80%;
   }
-  .main-focus__info--1, .main-focus__info--2 {
-    width: 85%;
+  .main-focus__info-1, .main-focus__info-2 {
+    width: 100%;
     margin: 5% 0;
   }
-  .our-projects .our-projects__gallery {
+  .our-projects__gallery {
     width: 100%;
   }
-  .our-projects .our-projects__gallery-up {
-    flex-direction: column;
-  }
-  .our-projects .our-projects__gallery-up img {
+  .our-projects__img-container, .our-projects__img3, .our-projects__img4, .our-projects__img5 {
     display: none;
   }
-  .our-projects .our-projects__gallery-up-background {
+  .our-projects__background-container {
     height: 180px;
     width: 100%;
     padding-bottom: 5%;
-  }
-  .our-projects .our-projects__gallery-low {
-    display: none;
   }
   .contact-info__content img {
     display: none;
