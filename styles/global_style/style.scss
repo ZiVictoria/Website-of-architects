@@ -464,6 +464,12 @@ body {
         }
     }
 
+    @media (max-width:$xs) {
+        .gallery__title {
+            font-size: 25px;
+        }
+    }
+
     &__line {
         border-bottom: 2px solid #F2F2F2;
     }
@@ -476,20 +482,12 @@ body {
         gap: 30px;
     }
 
-    @media (max-width:$sm) {
-        .gallery__photo {
-            display: grid;
-            grid-template-columns: repeat(3, 210px);
-            grid-template-rows: 260px 260px 260px;
-            gap: 30px;
-        }
-    }
 
     @media (max-width:$xs) {
         .gallery__photo {
             display: grid;
-            grid-template-columns: repeat(2, 210px);
-            grid-template-rows: 260px 260px 260px 260px;
+            grid-template-columns: 210px;
+            grid-template-rows: repeat (10, 260px);
             gap: 30px;
         }
     }
@@ -523,7 +521,17 @@ body {
         }
     }
 
+    @media (max-width:$xs) {
+        .gallery__nav {
+            width: 10%;
+            flex-wrap: wrap;
+        }
+        .gallery__nav-arrow {
+            margin-top: 10px;
+        }
+    }
 }
+
 
 
 
@@ -734,6 +742,12 @@ body {
 
         &-2 {
             @include titlebt;
+        }
+    }
+
+    @media (max-width:$xs) {
+        .certifications__title {
+            font-size: 25px;
         }
     }
 }
