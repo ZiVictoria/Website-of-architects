@@ -153,6 +153,30 @@ img {
           transform: scale(1.1);
 }
 
+@media screen and (max-width: 360px) {
+  .header .header__nav {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 15px;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+  }
+  .header .header__link {
+    font-size: 2vw;
+  }
+  .header .header__logo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
 .main {
   max-width: 1440px;
 }
@@ -1027,78 +1051,6 @@ img {
   background-color: #F9F9F9;
 }
 
-@media screen and (max-width: 768px) {
-  .container {
-    max-width: 768px;
-    width: 100%;
-  }
-  .header {
-    width: 100%;
-  }
-  .header__nav {
-    display: block;
-    text-align: right;
-  }
-  .projects {
-    padding: 0 0 3em;
-  }
-  .projects__title {
-    font-size: 1.75em;
-  }
-  .projects__section-1,
-  .projects__section-2,
-  .projects__section-3 {
-    max-width: 768px;
-    -ms-grid-columns: 100%;
-        grid-template-columns: 100%;
-    -ms-grid-rows: (1fr)[2];
-        grid-template-rows: repeat(2, 1fr);
-    margin-bottom: 1em;
-  }
-  .projects__section-1 img,
-  .projects__section-2 img,
-  .projects__section-3 img {
-    max-width: 100%;
-  }
-  .projects__section-1_left,
-  .projects__section-2_left,
-  .projects__section-3_left {
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 1;
-    grid-column: 1/2;
-    -ms-grid-row: 1;
-    -ms-grid-row-span: 1;
-    grid-row: 1/2;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  .projects__section-1_right,
-  .projects__section-2_right,
-  .projects__section-3_right {
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 1;
-    grid-column: 1/2;
-    -ms-grid-row: 2;
-    -ms-grid-row-span: 1;
-    grid-row: 2/3;
-  }
-  .projects__section-1_right-text,
-  .projects__section-2_right-text,
-  .projects__section-3_right-text {
-    width: 90%;
-  }
-  .projects__nav {
-    width: 100%;
-  }
-}
-
 @media screen and (max-width: 360px) {
   .container {
     max-width: 360px;
@@ -1237,32 +1189,6 @@ img {
 
 .project-1__section-3 img {
   max-width: 100%;
-}
-
-@media screen and (max-width: 768px) {
-  .container {
-    max-width: 768px;
-    width: 100%;
-  }
-  .project-1 {
-    padding: 0 0 3em;
-  }
-  .project-1__title {
-    font-size: 1.75em;
-  }
-  .project-1__section-1 img,
-  .project-1__section-3 img {
-    max-width: 100%;
-  }
-  .project-1__section-2 {
-    max-width: 768px;
-    -ms-grid-columns: 100%;
-        grid-template-columns: 100%;
-    gap: 0;
-  }
-  .project-1__section-2 img {
-    display: none;
-  }
 }
 
 @media screen and (max-width: 360px) {
@@ -1440,64 +1366,6 @@ img {
   text-align: center;
   color: rgba(200, 200, 200, 0.5);
   font-family: 'Open Sans', sans-serif;
-}
-
-@media (max-width: 768px) {
-  .footer__social {
-    max-width: 125px;
-  }
-  .footer__address {
-    margin-bottom: 32px;
-  }
-  .footer__phone {
-    margin-bottom: 33px;
-  }
-}
-
-@media (max-width: 670px) {
-  .footer__up {
-    -ms-grid-columns: 40% 1fr;
-        grid-template-columns: 40% 1fr;
-    row-gap: 30px;
-  }
-  .footer__header {
-    margin-bottom: 22px;
-  }
-  .footer__nav {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
-  .footer__nav li {
-    margin-right: 15px;
-  }
-  .footer__contacts {
-    -ms-grid-column: 2;
-    -ms-grid-column-span: 1;
-    grid-column: 2/3;
-    -ms-grid-row: 2;
-    -ms-grid-row-span: 1;
-    grid-row: 2/3;
-  }
-  .footer__logo {
-    -ms-grid-column-align: center;
-        justify-self: center;
-  }
-  .footer__social {
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 1;
-    grid-column: 1/2;
-    -ms-grid-column-align: center;
-        justify-self: center;
-  }
-  .footer__address {
-    margin-bottom: 10px;
-  }
-  .footer__phone {
-    margin-bottom: 10px;
-  }
 }
 
 @media (max-width: 360px) {
@@ -1690,10 +1558,9 @@ img {
   }
 }
 
-@media screen and (min-width: 360px) and (max-width: 768px) {
+@media screen and (width: 360px) {
   .main {
-    min-width: 360px;
-    max-width: 768px;
+    max-width: 360px;
     width: 90%;
     margin: 0 auto;
   }
