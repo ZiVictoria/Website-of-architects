@@ -1066,8 +1066,8 @@ img {
     &__phone,
     &__email {
         position: relative;
-
         img {
+            width:8%;
             position: absolute;
             top: 0;
         }
@@ -1120,65 +1120,24 @@ img {
     }
 }
 
-@media (max-width:$sm) {
-    .footer__social {
-        max-width: 125px;
-    }
-
-    .footer__address {
-        margin-bottom: 32px;
-    }
-
-    .footer__phone {
-        margin-bottom: 33px;
-    }
-}
-
-@media (max-width:670px) {
-    .footer {
-        &__up {
-            grid-template-columns: 40% 1fr;
-            row-gap: 30px;
-        }
-
-        &__header {
-            margin-bottom: 22px;
-        }
-
-        &__nav {
-            display: flex;
-            flex-wrap: wrap;
-
-            li {
-                margin-right: 15px;
+@media (max-width:$xs) {
+    .footer{
+        &__address,
+        &__phone,
+        &__email {
+            margin-bottom: 10px;
+            img {
+                width:5%;
             }
         }
-
-        &__contacts {
-            grid-column: 2/3;
-            grid-row: 2/3;
+        &__phone img{
+            left:110px;
         }
-
-        &__logo {
-            justify-self: center;
-        }
-
-        &__social {
-            grid-column: 1/2;
-            justify-self: center;
-        }
-
-        &__address {
-            margin-bottom: 10px;
-        }
-
-        &__phone {
-            margin-bottom: 10px;
+        &__address img{
+            width:4%;
+            top:-3px;
         }
     }
-}
-
-@media (max-width:$xs) {
     .footer__up {
         grid-template-columns: 98%;
         text-align: center;
@@ -1187,6 +1146,8 @@ img {
     }
 
     .footer__nav {
+        display: flex;
+        flex-wrap: wrap;
         justify-content: center;
 
         li {
