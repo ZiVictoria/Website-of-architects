@@ -143,11 +143,14 @@ img {
   display: inline-block;
   border-bottom: 1px solid #333333;
   border-top: 1px solid #333333;
-  padding: 4px 12px;
+  padding: 6px 12px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .header__link.active:hover {
-  font-size: 1.1vw;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .main {
