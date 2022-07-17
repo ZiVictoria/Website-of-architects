@@ -154,11 +154,26 @@ img {
             cursor: pointer;
         }
     }
+    @media (max-width:$xs) {
+        .contacts__title{
+            font-size: 25px;
+        }
+        .contacts__text{
+            display: flex;
+            align-items: flex-end;
+            justify-content: space-between;
+            .contacts__address{
+                line-height: 20px;
+            }
+        .contacts__image{
+            display: none;
+        }
+        }
+    }
 }
 
-.contacts-image {
+.contacts__image {
     width: 100vw;
-
     img {
         max-width: 100%;
     }

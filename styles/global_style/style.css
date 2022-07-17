@@ -277,11 +277,34 @@ img {
   cursor: pointer;
 }
 
-.contacts-image {
+@media (max-width: 360px) {
+  .contacts .contacts__title {
+    font-size: 25px;
+  }
+  .contacts .contacts__text {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .contacts .contacts__text .contacts__address {
+    line-height: 20px;
+  }
+  .contacts .contacts__text .contacts__image {
+    display: none;
+  }
+}
+
+.contacts__image {
   width: 100vw;
 }
 
-.contacts-image img {
+.contacts__image img {
   max-width: 100%;
 }
 
