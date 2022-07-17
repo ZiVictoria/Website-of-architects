@@ -22,11 +22,12 @@ img {
 //navigation-start
 .header {
     display: flex;
-    margin: 30px 49px;
-    gap: 50px;
+    gap: 10%;
+    height: 105px;
 
     &__logo {
-        flex-basis: 30%;
+        flex-basis: 40%;
+        align-self: center;
 
         img {
             width: 68px;
@@ -38,7 +39,6 @@ img {
         flex-grow: 1;
         display: flex;
         align-items: center;
-        justify-content: start;
     }
 
     &__link {
@@ -69,16 +69,22 @@ img {
     }
     @media screen and (max-width:360px) {
         .header{
+            max-width: 360px;
+            width: 100%;
             &__nav{
+                padding-top: 15px;
                 flex-direction: column;
-                gap: 15px;
-                align-items: flex-end;
+                row-gap: 25px;
+                flex-wrap: wrap;
+                align-items: center;
             }
             &__link{
-                font-size: 2vw;
+                font-size: 2.3vw;
             }
             &__logo{
+                flex-basis: 30%;
                 display: flex;
+                justify-content: center;
                 align-items: center;
             }
         }
@@ -90,10 +96,6 @@ img {
 //navigation-end
 
 //contacts page start
-.main {
-    max-width: $lg;
-}
-
 .contacts_container {
     max-width: $lg;
     width: 100%;
@@ -986,8 +988,8 @@ img {
     &__phone,
     &__email {
         position: relative;
-
         img {
+            width:8%;
             position: absolute;
             top: 0;
         }
@@ -1041,6 +1043,23 @@ img {
 }
 
 @media (max-width:$xs) {
+    .footer{
+        &__address,
+        &__phone,
+        &__email {
+            margin-bottom: 10px;
+            img {
+                width:5%;
+            }
+        }
+        &__phone img{
+            left:110px;
+        }
+        &__address img{
+            width:4%;
+            top:-3px;
+        }
+    }
     .footer__up {
         grid-template-columns: 98%;
         text-align: center;
@@ -1049,6 +1068,8 @@ img {
     }
 
     .footer__nav {
+        display: flex;
+        flex-wrap: wrap;
         justify-content: center;
 
         li {
