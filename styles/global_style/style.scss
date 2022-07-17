@@ -986,8 +986,8 @@ img {
     &__phone,
     &__email {
         position: relative;
-
         img {
+            width:8%;
             position: absolute;
             top: 0;
         }
@@ -1041,6 +1041,23 @@ img {
 }
 
 @media (max-width:$xs) {
+    .footer{
+        &__address,
+        &__phone,
+        &__email {
+            margin-bottom: 10px;
+            img {
+                width:5%;
+            }
+        }
+        &__phone img{
+            left:110px;
+        }
+        &__address img{
+            width:4%;
+            top:-3px;
+        }
+    }
     .footer__up {
         grid-template-columns: 98%;
         text-align: center;
@@ -1049,6 +1066,8 @@ img {
     }
 
     .footer__nav {
+        display: flex;
+        flex-wrap: wrap;
         justify-content: center;
 
         li {
