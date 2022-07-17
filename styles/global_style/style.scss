@@ -67,22 +67,37 @@ img {
     &__link.active:hover {
         transform: scale(1.1);
     }
+
     @media screen and (max-width:360px) {
+<<<<<<< HEAD
         .header{
             max-width: 360px;
             width: 100%;
             &__nav{
                 padding-top: 15px;
+=======
+        .header {
+            &__nav {
+>>>>>>> 79b931db15b90f1a2df6454d1552c1808ac2c398
                 flex-direction: column;
                 row-gap: 25px;
                 flex-wrap: wrap;
                 align-items: center;
             }
+<<<<<<< HEAD
             &__link{
                 font-size: 2.3vw;
             }
             &__logo{
                 flex-basis: 30%;
+=======
+
+            &__link {
+                font-size: 2vw;
+            }
+
+            &__logo {
+>>>>>>> 79b931db15b90f1a2df6454d1552c1808ac2c398
                 display: flex;
                 justify-content: center;
                 align-items: center;
@@ -515,10 +530,10 @@ img {
     }
 
     @media (max-width:$xs) {
-        .gallery__title{
+        .gallery__title {
             font-size: 25px;
         }
-        
+
     }
 
     &__line {
@@ -570,12 +585,14 @@ img {
             }
         }
     }
+
     @media (max-width:$xs) {
-        .gallery__nav{
+        .gallery__nav {
             width: 10%;
             flex-wrap: wrap;
         }
-        .gallery__nav-arrow{
+
+        .gallery__nav-arrow {
             margin-top: 10px;
         }
     }
@@ -915,11 +932,12 @@ img {
             @include titlebt;
         }
     }
+
     @media (max-width:$xs) {
-        .certifications__title{
+        .certifications__title {
             font-size: 25px;
         }
-        
+
     }
 }
 
@@ -1102,13 +1120,10 @@ img {
 
 // footer end
 
-@media screen and (width:$xs) {
+@media screen and (max-width:$xs) {
 
     // ширина 360px
     .main {
-        max-width: $xs;
-        margin: 0 auto;
-
         h2 {
             font-size: 1.5em;
         }
@@ -1263,195 +1278,6 @@ img {
             &-2 {
                 width: 100%;
                 margin: 5% 0;
-            }
-        }
-    }
-}
-
-@media screen and (width:$xs) {
-    .main {
-        max-width: 360px;
-        width: 90%;
-        margin: 0 auto;
-
-        h2 {
-            font-size: 2.5em;
-        }
-
-        p {
-            font-size: 1em;
-        }
-    }
-
-    .lorum_project,
-    .about,
-    .our_projects,
-    .contact_info,
-    .main_focus {
-        margin-bottom: 50px;
-    }
-
-    .our_projects,
-    .contact_info,
-    .main_focus {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .lorum_project {
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        padding-bottom: 50px;
-
-        background-image: url('./../../assets/global_img/main_img.png');
-
-        .lorum_project__info {
-            display: flex;
-            width: 100%;
-            justify-content: center;
-
-            .lorum_project__nav {
-                display: none;
-            }
-
-            .lorum_project__title {
-                font-size: 1.5em;
-
-                &-1 {
-                    color: white;
-                }
-            }
-        }
-
-        .lorum_project__gallery {
-            width: auto;
-            height: auto;
-            position: relative;
-            display: flex;
-            background-image: none;
-            justify-content: center;
-
-            &-button {
-                position: relative;
-            }
-        }
-    }
-
-    .about {
-        height: auto;
-        padding: 0 50px 50px 50px;
-
-        &__img {
-            display: none;
-        }
-
-        &__body {
-            width: 100%;
-        }
-    }
-
-    .our_projects {
-
-        .our_projects__gallery {
-            width: 80%;
-
-            img {
-                width: 100%;
-            }
-
-            &-up {
-                flex-direction: column;
-                align-items: center;
-
-                img {
-                    display: none;
-                }
-
-                &-background {
-                    height: 180px;
-                    width: 100%;
-                    padding-bottom: 5%;
-                }
-            }
-
-            &-low {
-                flex-wrap: wrap;
-            }
-
-            &-low img:nth-child(odd) {
-                display: none;
-            }
-        }
-    }
-
-    .contact_info {
-
-        &__body {
-            display: flex;
-            flex-direction: column;
-            height: auto;
-
-            .forms__item {
-                min-width: 360px;
-                max-width: 700px;
-            }
-
-            img {
-                display: none;
-            }
-        }
-    }
-
-    .main_focus {
-        h2 {
-            font-size: 1.3em;
-        }
-
-        .big_number {
-            font-size: 10em;
-        }
-
-        &__info {
-            flex-direction: column;
-            margin: -5% 0;
-            margin-top: 5%;
-
-            &-1,
-            &-2 {
-                width: 100%;
-                margin: 5% 0;
-            }
-        }
-    }
-
-    .contacts_container {
-        .wrapper {
-            display: grid;
-            grid-template-columns: 1fr;
-            grid-template-rows: 1fr;
-
-            .contacts {
-                &__title {
-                    display: flex;
-                    gap: 20px;
-                    font-size: 1.5em;
-                }
-
-                &__text {
-                    display: flex;
-                    justify-content: flex-start;
-                }
-            }
-
-            .contacts-image {
-                display: flex;
-                justify-content: flex-end;
-                width: 100%;
-                img {
-                    max-width: 70vw;
-                }
             }
         }
     }
